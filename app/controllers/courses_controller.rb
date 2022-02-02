@@ -2,7 +2,7 @@ class CoursesController < ApplicationController
   before_action :set_course, only: %i[ edit update show destroy ]
 
   def index
-    @course = Course.all
+    @courses = Course.all
   end
 
   def show
@@ -15,11 +15,12 @@ class CoursesController < ApplicationController
   def create
     @course = Course.new(course_params)
     @course.user = current_user
-    if @course.save
-      redirect_to root_path
-    else
-      render :new
-    end
+     if @course.save
+       redirect_to root_path
+     else
+       render :new
+     end
+    redirect_to courses_path
   end
 
   def edit
@@ -27,15 +28,16 @@ class CoursesController < ApplicationController
 
   def update
     if @course.update(course_params)
-      redirect_to course_path(@course.id)
+      redirect_to course_path(@course)
     else
       render :edit
     end
   end
 
   def destroy
-    @course.destroy
-    redirect_to list_path(@course.detail)
+   if @course.destroy
+      redirect_to courses_path
+    end
   end
 
   private
@@ -45,6 +47,6 @@ class CoursesController < ApplicationController
   end
 
   def set_course
-    @course = course.find(params[:id])
+    @course = Course.find(params[:id])
   end
 end
