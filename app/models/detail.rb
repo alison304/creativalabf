@@ -1,4 +1,4 @@
 class Detail < ApplicationRecord
   belongs_to :course
-  belongs_to :exam
+  has_many :exams
 end
