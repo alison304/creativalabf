@@ -14,5 +14,4 @@ Rails.application.routes.draw do
   resources :reviews, only: [ :edit, :update, :destroy, :index ]
   resources :courses
   resources :memberships
-  resources :reviews, only: [:destroy]
 end
