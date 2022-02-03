@@ -6,7 +6,7 @@ Rails.application.routes.draw do
     resources :reviews, only: [ :new, :create ]
     resources :exams, only: [ :new, :create ]
   end
-  
+
   resources :exams, only: [ :edit, :update, :destroy, :index ] do
     resources :answers, only: [ :new, :create ]
   end
@@ -14,4 +14,5 @@ Rails.application.routes.draw do
   resources :reviews, only: [ :edit, :update, :destroy, :index ]
   resources :courses
   resources :memberships
+  resources :reviews, only: [:destroy]
 end
