@@ -5,6 +5,7 @@ class DetailsController < ApplicationController
 
   def show
     @detail = Detail.find(params[:id])
+    @course = @detail.course
   end
 
   def new
