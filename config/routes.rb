@@ -6,7 +6,6 @@ Rails.application.routes.draw do
     resources :reviews, only: [ :new, :create ]
     resources :exams, only: [ :new, :create ]
   end
-
   resources :exams, only: [ :edit, :update, :destroy, :index, :show ] do
     resources :answers, only: [ :new, :create ]
   end
