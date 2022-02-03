@@ -1,0 +1,52 @@
+<head>
+  	<link rel="stylesheet" href="css/style.css">
+	<title>Creativa</title>
+	<meta name="description" content="This is Dara´s profile">
+	<meta charset="utf-8">
+	<script src="https://kit.fontawesome.com/cba6117f5a.js" crossorigin="anonymous"></script>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@200;300;600;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+  <br>
+  <br>
+  <br>
+<div class="index-banner">
+  <h1>¡Hola Usuario!</h1>
+  <p>Inicia hoy aprendiendo habilidades digitales para las organizaciones del futuro.</p>
+  <div class="img-icons">
+    <div class="card-img">
+      <%= image_tag "landin.png", class:"img5" %>
+    </div>
+    <div class="card-img">
+      <%= image_tag "brand.png", class:"img5" %>
+    </div>
+    <div class="card-img">
+      <%= image_tag "design.png", class:"img5" %>
+    </div>
+  </div>
+</div>
+<div class="img-banner position-absolute top-50 end-0 translate-middle-y">
+  <%= image_tag "chicab.jpg", class:"img4" %>
+</div>
+
+<div class="courses">
+|<p>Cursos</p>
+</div>
+<div>
+<% @courses.each do |course| %>
+<div class="card">
+<%= course.name %>
+<%= link_to 'Empezar', course_path(course), class: "btn btn-blue" %>
+  <%= image_tag "courses1.png", class:"img6" %>
+</div>
+<% end %>
+</div>
+
+
+
+
+</body>
