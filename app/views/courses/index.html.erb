@@ -51,21 +51,19 @@
 
 <br>
 
-<div class="flex-container"> 
-  <div class="row">
-    <div class="cards-c">
-      <% @courses.each do |course| %>
-        <div class="col-md-6">
-          <div class="cards-container">
-            <%= image_tag "courses1.png", class:"img6" %>
-              <div class="cards-2">
-                <strong><%= course.name %></strong>
-                <%= link_to 'Empezar', course_path(course), class: "btn btn-primary" %>
-              </div>
-          </div>
+<div class="container"> 
+  <div class="cards-c">
+    <% @courses.each do |course| %>
+      <div class="">
+        <div class="cards-container">
+          <%= image_tag "courses1.png", class:"img6" %>
+            <div class="cards-2">
+              <h3 ><%= course.name %></h3>
+              <%= link_to 'Empezar', course_path(course), class: "btn btn-primary" %>
+            </div>
         </div>
-      <% end %>
-    </div>
+      </div>
+    <% end %>
   </div>
 </div>
 
