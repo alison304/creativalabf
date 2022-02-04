@@ -1,4 +1,10 @@
 class ReviewsController < ApplicationController
+
+  def index
+    @reviews = Review.all
+    @detail = @reviews.first.detail
+  end
+
   def new
     @detail = Detail.find(params[:detail_id])
     @review = Review.new
@@ -11,7 +17,7 @@ class ReviewsController < ApplicationController
     @detail = Detail.find(params[:detail_id])
     @review.detail = @detail
     if @review.save
-      redirect_to detail_path(@detail)
+      redirect_to reviews_path(@reviews)
     else
       render :new
     end
