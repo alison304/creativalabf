@@ -1,0 +1,75 @@
+<head>
+  	<link rel="stylesheet" href="css/style.css">
+	<title>Creativa</title>
+	<meta name="description" content="This is Dara´s profile">
+	<meta charset="utf-8">
+	<script src="https://kit.fontawesome.com/cba6117f5a.js" crossorigin="anonymous"></script>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@200;300;600;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+  <br>
+  <br>
+  <br>
+  <div class="course-banner d-flex">
+    <div class="banner-1">
+      <div class="index-banner">
+        <h1>¡Hola Usuario!</h1>
+        <p>Inicia hoy aprendiendo habilidades digitales para las organizaciones del futuro.</p>
+      </div>
+      
+      <div class="img-icons">
+        <div class="card-img">
+          <%= image_tag "landin.png", class:"img5" %>
+          <p>Landing</p>
+        </div>
+        <div class="card-img">
+          <%= image_tag "brand.png", class:"img5" %>
+          <p>Branding</p>
+        </div>
+        <div class="card-img">
+          <%= image_tag "design.png", class:"img5" %>
+          <p>Design</p>
+        </div>
+      </div>
+    </div>
+    
+    <div class="img-banner">
+      <%= image_tag "chicab.jpg", class:"img4" %>
+    </div>
+  </div>
+
+<br>
+<div class="courses d-flex align-items-center justify-content-center">
+ <p><strong>Cursos</strong></p>
+</div>
+<br>
+<div class="row">
+  <% @courses.each do |course| %>
+  <div class="col">
+      <div class="card col">
+      <strong><%= course.name %></strong>
+      <%= link_to 'Empezar', course_path(course), class: "btn btn-blue" %>
+        <%= image_tag "courses1.png", class:"img6" %>
+      </div>
+    <% end %>
+  </div>
+</div>
+
+<br>
+
+<div class="end">
+<p>Nuestro team siempre<br>
+está listo para<br>
+ayudarte</p>
+<br>
+<p>¿Estás listo para<br>
+potenciar tus habilidades?</p>
+</div>
+
+<br>
+
+</body>
