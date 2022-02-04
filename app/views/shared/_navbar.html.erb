@@ -1,6 +1,6 @@
 <div class="navbar navbar-expand-sm navbar-light navbar-lewagon fixed-top">
   <div class="container-fluid">
-    <%= link_to "#", class: "navbar-brand" do %>
+    <%= link_to root_path, class: "navbar-brand" do %>
       <%= image_tag "logo1.png" %>
     <% end %>
 
@@ -9,10 +9,10 @@
     </button>
 
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto">
+      <ul class="navbar-nav me-auto" style="position: absolute; bottom: 14px; left: 1160px;">
         <% if user_signed_in? %>
-          <li class="nav-item active">
-            <%= link_to "Home", "#", class: "nav-link" %>
+          <li class="nav-item active" style="padding: 8px">
+            <%= link_to 'Inicio', root_path %>
           <%# </li> %>
           <%# <li class="nav-item">
             <%= link_to 'Ver cursos', courses_path, class: "btn btn-blue" %>

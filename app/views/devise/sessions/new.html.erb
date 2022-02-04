@@ -16,10 +16,18 @@
         </div>
 
         <div class="form-actions">
-          <%= f.button :submit, "Log in" %>
+
+          <a href="/users/sign_up" class="btn btn-primary">Crear cuenta</a>
+          <br>
+          <br>
+
+          <a href="/users/password/new" class="btn btn-primary">¿Olvidaste tu contraseña?</a>
+          <%# <%= f.button :submit, "Log in" %>
         </div>
       <% end %>
 
-    <%= render "devise/shared/links" %>
+    <%# <%= render "devise/shared/links" %>
     </div>
   </div>
+
+</div>
