@@ -14,11 +14,13 @@
 
   </head>
 
-  <body>
+  <body style="background-color: pink">
+
     <%= render 'shared/navbar' %>
     <%= render 'shared/flashes' %>
-
-    <%= yield %>
+    <div class="container">
+      <%= yield %>
+    </div>
     <%= render 'shared/footer' %>
 
 
