@@ -1,0 +1,10 @@
+<ul>
+  <% @exams.each do |exam| %>
+    <li><%= exam.question  %></li>
+    <%= simple_form_for [exam, @answer] do |f| %>
+      <%= f.input :answer,     as: :radio_buttons, collection: [[exam.answerA, "A"], [exam.answerB, "B"], [exam.answerB, "C"]]%>
+      <%= f.submit %>
+    <% end %>
+    <%# <%= link_to "show", "#{details_path}/#{params[:detail_id]}/exams/#{exam.id}"%> %>
+  <% end %>
+</ul>

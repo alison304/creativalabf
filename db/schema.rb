@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_02_02_193058) do
+ActiveRecord::Schema.define(version: 2022_02_03_191210) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -39,6 +39,7 @@ ActiveRecord::Schema.define(version: 2022_02_02_193058) do
     t.bigint "course_id", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.string "video_url"
     t.index ["course_id"], name: "index_details_on_course_id"
   end
 
@@ -48,6 +49,9 @@ ActiveRecord::Schema.define(version: 2022_02_02_193058) do
     t.bigint "detail_id", null: false
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.string "answerA"
+    t.string "answerB"
+    t.string "answerC"
     t.index ["detail_id"], name: "index_exams_on_detail_id"
   end
 
