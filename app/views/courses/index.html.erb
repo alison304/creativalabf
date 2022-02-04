@@ -58,8 +58,10 @@
         <div class="cards-container">
           <%= image_tag "courses1.png", class:"img6" %>
             <div class="cards-2">
-              <h3 ><%= course.name %></h3>
-              <%= link_to 'Empezar', course_path(course), class: "btn btn-primary" %>
+              <h3><%= course.name %></h3>
+              <div class="mt-5">
+                <%= link_to 'Empezar', course_path(course), class: "btn btn-primary" %>
+              </div>
             </div>
         </div>
       </div>
