@@ -45,19 +45,19 @@
 
 <br>
 
-<div class="flex-container">
-  <div class="flex-item">
+<div class="boton">
   <p><strong>Cursos</strong></p>
-  </div>
-  <br>
-  
+</div>
+
+<br>
+<div class="flex-container"> 
   <div class="row">
     <% @courses.each do |course| %>
     <div class="col">
         <div class="card col">
          <%= image_tag "courses1.png", class:"img6" %>
         <strong><%= course.name %></strong>
-        <%= link_to 'Empezar', course_path(course), class: "btn btn-blue" %>
+        <%= link_to 'Empezar', course_path(course), class: "btn btn-primary" %>
         </div>
       <% end %>
     </div>
