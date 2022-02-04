@@ -1,8 +1,9 @@
 class ExamsController < ApplicationController
   before_action :set_exam, only: %i[ edit update show destroy ]
-  before_action :set_detail, only: %i[ create ]
+  # before_action :set_detail, only: %i[ create ]
   def index
-    @exam = Exam.all
+    @exams = Exam.all
+    @answer = Answer.new
   end
 
   def show
@@ -10,13 +11,15 @@ class ExamsController < ApplicationController
 
   def new
     @exam = Exam.new
+    @detail = Detail.find(params[:detail_id])
   end
 
   def create
+    @detail = Detail.find(params[:detail_id])
     @exam = Exam.new(exam_params)
     @exam.detail = @detail
     if @exam.save
-      redirect_to exam_path(@exam)
+      redirect_to detail_exams_path(params[:detail_id])
     else
       render :new
     end
@@ -41,14 +44,14 @@ class ExamsController < ApplicationController
   private
 
   def exam_params
-    params.require(:exam).permit(:question, :answer_solution, :detail_id)
+    params.require(:exam).permit(:question, :answer_solution, :answerA, :answerB, :answerC)
   end
 
   def set_exam
-    @exam = exam.find(params[:id])
+    @exam = Exam.find(params[:id])
   end
 
-  def set_detail
-    @detail = detail.find(params[:id])
-  end
+  # def set_detail
+  #   @detail = Detail.find(params[:id])
+  # end
 end

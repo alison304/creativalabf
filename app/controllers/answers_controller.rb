@@ -15,10 +15,12 @@ class AnswersController < ApplicationController
   def create
     @answer = Answer.new(answer_params)
     @answer.user = current_user
-    if @answer.save
-      redirect_to exam_path(@exam)
+    @answer.exam = @exam
+    if @answer.save!
+      redirect_to exams_path
     else
-      render :new
+      @exams = Exam.all
+      render "exams/index"
     end
   end
 
@@ -45,10 +47,10 @@ class AnswersController < ApplicationController
   end
 
   def set_answer
-    @answer = answer.find(params[:id])
+    @answer = Answer.find(params[:id])
   end
 
   def set_exam
-    @exam = exam.find(params[:id])
+    @exam = Exam.find(params[:exam_id])
   end
 end
