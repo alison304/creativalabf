@@ -14,11 +14,12 @@
   <br>
   <br>
   <br>
+
   <div class="course-banner d-flex">
     <div class="banner-1">
       <div class="index-banner">
         <h1>¡Hola Usuario!</h1>
-        <p>Inicia hoy aprendiendo habilidades digitales para las organizaciones del futuro.</p>
+        <p>Inicia hoy aprendiendo<br> habilidades digitales para las<br> organizaciones del futuro.</p>
       </div>
       
       <div class="img-icons">
@@ -43,33 +44,44 @@
   </div>
 
 <br>
-<div class="courses d-flex align-items-center justify-content-center">
- <p><strong>Cursos</strong></p>
-</div>
-<br>
-<div class="row">
-  <% @courses.each do |course| %>
-  <div class="col">
-      <div class="card col">
-      <strong><%= course.name %></strong>
-      <%= link_to 'Empezar', course_path(course), class: "btn btn-blue" %>
-        <%= image_tag "courses1.png", class:"img6" %>
+
+<div class="flex-container">
+  <div class="flex-item">
+  <p><strong>Cursos</strong></p>
+  </div>
+  <br>
+  
+  <div class="row">
+    <% @courses.each do |course| %>
+    <div class="col">
+        <div class="card col">
+         <%= image_tag "courses1.png", class:"img6" %>
+        <strong><%= course.name %></strong>
+        <%= link_to 'Empezar', course_path(course), class: "btn btn-blue" %>
+        </div>
+      <% end %>
+    </div>
+  </div>
+
+  <br>
+
+  <div class="flex-item">
+    <div class="banner-2">
+      <div class="last-end">
+        <p>Nuestro team siempre<br>
+        está listo para<br>
+        ayudarte</p>
+        <br>
+        <p>¿Estás listo para<br>
+        potenciar tus habilidades?</p>
       </div>
-    <% end %>
+    </div>
+    <div class="ban-2">
+      <%= image_tag "alegr.jpg", class:"img7" %>
+      <%= image_tag "chic.jpg", class:"img7" %>
+    </div>
   </div>
 </div>
 
 <br>
-
-<div class="end">
-<p>Nuestro team siempre<br>
-está listo para<br>
-ayudarte</p>
-<br>
-<p>¿Estás listo para<br>
-potenciar tus habilidades?</p>
-</div>
-
-<br>
-
 </body>
