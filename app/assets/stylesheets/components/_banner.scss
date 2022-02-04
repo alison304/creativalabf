@@ -7,6 +7,9 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  bottom: 209px;
+  left: 276px;
+
 
   &--left {
     width: 60%;
@@ -27,9 +30,22 @@
   }
 }
 
+
+
 .banner-title {
-    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Outfit', sans-serif;
 }
+
+.home-title {
+  font-family: 'Outfit', sans-serif;
+  font-size: 30px;
+
+}
+
+p {
+  font-family: 'Outfit', sans-serif;
+}
+
 
 .image-banner {
   position: relative;
@@ -41,16 +57,17 @@
     width: 180px;
     height: 230px;
     bottom: 209px;
-    left: 276px;
+    left: 215px;
     border-radius: 10px;
 }
+
 
 .img2 {
     position: absolute;
     width: 159px;
     height: 198px;
-    bottom: 84px;
-    left: 104px;
+    bottom: 91px;
+    left: 35px;
     border-radius: 10px;
 }
 
@@ -58,8 +75,8 @@
     position: absolute;
     width: 180px;
     height: 230px;
-    bottom: 297px;
-    left: 67px;
+    bottom: 306px;
+    left: -10px;
     border-radius: 10px;
 }
 
@@ -105,4 +122,63 @@ a {
   width: 100%;
   text-align: center;
   height: 660px;
+}
+.card-img{
+  background-color: white !important;
+  height: 83px;
+  width: 83px;
+  border-radius: 8px; 
+}
+
+.img5{
+  height: 50px;
+  width: 50px;
+}
+.img-icons{
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 90%;
+}
+
+.course-banner {
+  height: 60vh;
+  background-color: #2E5BFF;
+}
+
+.banner-1 {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.img-banner {
+  width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+
+  & img {
+    width: 90%;
+  }
+}
+
+.img-banner img{
+  border-radius: 8px;
+}
+
+.card{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.boton{
+  display: flex;
+  justify-content: space-around;
+  color: #2E5BFF;
 }

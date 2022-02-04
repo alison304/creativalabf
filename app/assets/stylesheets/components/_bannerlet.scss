@@ -1,0 +1,27 @@
+.index-banner {
+  color: white;
+}
+
+.courses{
+  color: #2E5BFF;
+}
+
+.banner-2{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-weight: bold;
+}
+
+.flex-item{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.ban-2{
+  display: flex;
+  flex-direction: column;
+}
