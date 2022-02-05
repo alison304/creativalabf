@@ -1,10 +1,12 @@
-<ul>
-  <% @exams.each do |exam| %>
-    <li><%= exam.question  %></li>
-    <%= simple_form_for [exam, @answer] do |f| %>
-      <%= f.input :answer,     as: :radio_buttons, collection: [[exam.answerA, "A"], [exam.answerB, "B"], [exam.answerB, "C"]]%>
-      <%= f.submit %>
-    <% end %>
-    <%# <%= link_to "show", "#{details_path}/#{params[:detail_id]}/exams/#{exam.id}"%> %>
-  <% end %>
-</ul>
+<div class="container exam-form">
+      <% @exams.each do |exam| %>
+        <%= exam.question %>
+        <%= simple_form_for [exam, @answer] do |f| %>
+          <%# <div class="exam-inputs"> %>
+            <%= f.input :answer, as: :radio_buttons, collection: [[exam.answerA, "A"], [exam.answerB, "B"], [exam.answerB, "C"]]%>
+          <%# </div> %>
+        <% end %>
+        <%#=f.submit "Enviar", class:"btn btn-primary" %>
+      <% end %>
+      <button type="submit" class="btn btn-primary mb-2">Enviar</button>
+</div>

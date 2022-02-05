@@ -4,6 +4,7 @@ class ExamsController < ApplicationController
   def index
     @exams = Exam.all
     @answer = Answer.new
+
   end
 
   def show
@@ -48,7 +49,7 @@ class ExamsController < ApplicationController
   end
 
   def set_exam
-    @exam = Exam.find(params[:id])
+    @exam = Exam.find(params[:detail_id])
   end
 
   # def set_detail
