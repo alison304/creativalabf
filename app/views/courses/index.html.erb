@@ -51,30 +51,41 @@
 
 <br>
 
-<div class="row">
-  <% @courses.each do |course| %>
-  <div class="col">
-      <div class="card col">
-      <strong><%= course.name %></strong>
-      <%= link_to 'Empezar', course_path(course), class: "btn btn-blue" %>
-        <%= image_tag "courses1.png", class:"img6" %>
-      <% end %>
-<div class="flex-container"> 
-  <div class="row">
-    <div class="cards-c">
-      <% @courses.each do |course| %>
-      <div class="col">
-          <div class="cards-container">
+<div class="container"> 
+  <div class="cards-c">
+    <% @courses.each do |course| %>
+      <div class="">
+        <div class="cards-container">
           <%= image_tag "courses1.png", class:"img6" %>
             <div class="cards-2">
-              <strong><%= course.name %></strong>
-              <%= link_to 'Empezar', course_path(course), class: "btn btn-primary" %>
+              <h3><%= course.name %></h3>
+              <div class="mt-5">
+                <%= link_to 'Empezar', course_path(course), class: "btn btn-primary" %>
+              </div>
             </div>
-      <% end %>
-          </div>
+        </div>
       </div>
-   </div>
+    <% end %>
   </div>
+</div>
 
 <br>
- 
+<br>
+
+  <div class="flex-item">
+    <div class="banner-2">
+      <div class="last-end">
+        <p>Nuestro team siempre<br>
+        está listo para<br>
+        ayudarte</p>
+        <br>
+        <p>¿Estás listo para<br>
+        potenciar tus habilidades?</p>
+      </div>
+    </div>
+    <div class="ban-2">
+      <%= image_tag "alegr.jpg", class:"img7" %>
+      <%= image_tag "chic.jpg", class:"img7" %>
+    </div>
+  </div>
+ <br>

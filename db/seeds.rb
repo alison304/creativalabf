@@ -9,7 +9,7 @@
 
 puts "limpiando base de datos"
 User.destroy_all if Rails.env.development?
-Course.destroy_all if Rails.env.development?
+Course.destroy_all
 
 puts "creando nuevas seeds"
 User.create(email:  "carolina@gmail.com", password: "Carolina123", password_confirmation: "Carolina123")

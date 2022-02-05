@@ -3,12 +3,26 @@
   display: flex;
   background-color: white;
   overflow: hidden;
-  height: 120px;
-  width: 500px;
+  height: 172px;
+  width: 396px;
   box-shadow: 0 0 15px rgba(0,0,0,0.2);
-  align-items: center
+  align-items: center;
+  /* bottom: 209px;
+  left: 215px;
+  position: absolute; */
 }
-
+.cards-2{
+ padding: 12px;
+ margin: 0;
+}
+ .cards-2 h3 {
+  font-weight: bold;
+ }
+.cards-c {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 16px;
+}
 // .card-product {
 //   overflow: hidden;
 //   height: 120px;
@@ -16,14 +30,10 @@
 //   box-shadow: 0 0 15px rgba(0,0,0,0.2);
 //   display: flex;
 //   align-items: center;
-// }
-.cards-container .cards-2{
- padding: 16px;
-}
-
 .img6{
   height: 150px;
   width: 150px;
+  padding-left: 10px;
 }
 
 .img7{
@@ -48,8 +58,4 @@
   text-align: left;
 }
 
-
-.cards-c {
-
-}
 
