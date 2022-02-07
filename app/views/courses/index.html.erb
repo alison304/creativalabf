@@ -51,13 +51,12 @@
 
 <br>
 
-<div class="container"> 
+<div class="container">
   <div class="cards-c">
     <% @courses.each do |course| %>
       <div class="">
         <div class="cards-container">
-          <% if course.photo.key.nil?  %>
-          <% else %>
+          <% if course.photo.attached?%>
           <%= cl_image_tag course.photo.key, height: 130, width: 150, crop: :fill, styles: "object-fit: cover" %>
             <% end %>
           <div class="cards-2">
