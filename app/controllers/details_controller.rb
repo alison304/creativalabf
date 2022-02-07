@@ -1,6 +1,8 @@
 class DetailsController < ApplicationController
   def index
-    @details = Detail.all
+    @details = Detail.where(course_id: params[:course_id])
+
+    # @details = Detail.all
   end
 
   def show

@@ -2,8 +2,8 @@ Rails.application.routes.draw do
   devise_for :users
   root to: 'pages#home'
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
-  resources :details do
-    resources :reviews, only: [ :new, :create ]
+  resources :details, except: [:index, :show] do
+    resources :reviews, only: [ :new, :create, :index ]
     resources :exams # only: [ :new, :create ]
   end
 
@@ -13,6 +13,9 @@ Rails.application.routes.draw do
 
   # resources :answers, only: [ :edit, :update, :destroy, :index ]
   resources :reviews, only: [ :edit, :update, :destroy, :index ]
-  resources :courses
+  resources :courses do
+    resources :details, only: [:index, :show]
+
+  end
   resources :memberships
 end
