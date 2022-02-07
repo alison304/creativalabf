@@ -1,27 +1,15 @@
-
-<div class="container">
-  <div class="d-flex">
-    <div>
+<div class="row">
+    <div class = "col-3">
       <ul style = "list-style: none">
         <li><%= link_to "Module 1", detail_path(@course), class: "btn btn-success" %></li>
         <li><%= link_to "Module 2", detail_path(@course), class: "btn btn-success" %></li>
         <li><%= link_to "Module 3", detail_path(@course), class: "btn btn-success" %></li>
       </ul>
+    </div>
+    <div class = "col-6">
+      <iframe width="560" height="315" src=<%= @detail.content %> title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
     </div>
-    <div>
+    <div class = "col-3">
     </div>
-    <div>
-    </div>
-  </div>
 </div>
-
-
-
-
-
-
-
-
-
-<%= link_to "new_review" , new_detail_review_path(Detail.first), class:"btn btn-primary" %>

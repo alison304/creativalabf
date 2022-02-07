@@ -9,6 +9,7 @@
               <%= link_to 'Editar', edit_course_path(@course), class: "btn btn-success" %>
               <%= link_to 'Eliminar', course_path(@course), class: "btn btn-primary", method: :delete %>
               <%= link_to 'Rentar', new_course_path(@course), class: "btn btn-primary" %>
+              <%= link_to 'Ver módulos', course_details_path(@course), class: "btn btn-blue" %>
           </div>
         </div>
     </div>
