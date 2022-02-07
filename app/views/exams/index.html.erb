@@ -1,12 +1,18 @@
-<div class="container exam-form">
+
+<div class="container">
+  <div class="row">
+    <div class="col-8 mx-auto">
+      <h2><%= @detail.name %></h2>
       <% @exams.each do |exam| %>
         <%= exam.question %>
-        <%= simple_form_for [exam, @answer] do |f| %>
-          <%# <div class="exam-inputs"> %>
-            <%= f.input :answer, as: :radio_buttons, collection: [[exam.answerA, "A"], [exam.answerB, "B"], [exam.answerB, "C"]]%>
-          <%# </div> %>
+          <%= simple_form_for [exam, @answer] do |f| %>
+            <%= f.input :answer, label:"Selecciona tu respuesta", as: :radio_buttons, collection: [exam.answerA, exam.answerB, exam.answerB]%>
+          <% end %>
         <% end %>
-        <%#=f.submit "Enviar", class:"btn btn-primary" %>
-      <% end %>
+      <%#= link_to 'Show', detail_exam_path %>
+      <%#= link_to 'Create', edit_detail_exam_path(exam) %>
+      <%#= link_to 'Destroy', exam, method: :delete, data: { confirm: 'Are you sure?'%>
       <button type="submit" class="btn btn-primary mb-2">Enviar</button>
+    </div>
+  </div>
 </div>

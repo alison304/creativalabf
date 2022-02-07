@@ -2,9 +2,9 @@ class ExamsController < ApplicationController
   before_action :set_exam, only: %i[ edit update show destroy ]
   # before_action :set_detail, only: %i[ create ]
   def index
-    @exams = Exam.all
     @answer = Answer.new
-
+    @exams = Exam.where(detail_id: params[:detail_id])
+    @detail = Detail.find(params[:detail_id])
   end
 
   def show

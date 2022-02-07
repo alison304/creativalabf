@@ -14,11 +14,14 @@
           <li class="nav-item active" style="margin: 17px;">
             <%= link_to 'Inicio', root_path, class:"btn btn-secondary" %>
             <%= link_to 'Mis cursos', courses_path, class:"btn btn-secondary" %>
-          <%# </li> %>
+            <%= link_to "Cerrar sesión", destroy_user_session_path, method: :delete, class: "dropdown-item" %>
+          </li>
           <%# <li class="nav-item">
             <%= link_to 'Ver cursos', courses_path, class: "btn btn-blue" %>
          <%#  </li> %>
-          <li class="nav-item dropdown" style="margin: 15px">
+
+
+          <li class="nav-item dropdown" style="margin: 25px">
             <%= image_tag "avatar.png", class: "avatar dropdown-toggle", id: "navbarDropdown", data: { bs_toggle: "dropdown" }, 'aria-haspopup': true, 'aria-expanded': false %>
             <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
               <%= link_to "Mis cursos", courses_path, class: "dropdown-item" %>
@@ -27,6 +30,8 @@
               <%= link_to "Cerrar sesión", destroy_user_session_path, method: :delete, class: "dropdown-item" %>
             </div>
           </li>
+
+
         <% else %>
           <li class="nav-item">
             <%= link_to "Iniciar sesión", new_user_session_path, class: "btn btn-outline-primary" %>
