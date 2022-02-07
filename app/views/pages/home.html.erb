@@ -1,7 +1,7 @@
 <head>
   	<link rel="stylesheet" href="css/style.css">
 	<title>Creativa</title>
-	<meta name="description" content="This is Dara´s profile">
+	<meta name="description" content="Creativa Lab">
 	<meta charset="utf-8">
 	<script src="https://kit.fontawesome.com/cba6117f5a.js" crossorigin="anonymous"></script>
 	<link rel="preconnect" href="https://fonts.googleapis.com">
@@ -17,7 +17,7 @@
 					<p>
 					Entrenamos en <strong>habilidades digitales</strong> para las organizaciones del futuro.
 					</p>
-				<%= link_to 'Ver cursos', courses_path, class: "btn btn-blue" %>
+				<a class="btn btn-light" href="/courses" style="margin: 0;"> <strong>Ver cursos</strong></a>
 				</div>
   		</div>
 
@@ -28,37 +28,65 @@
       </div>
 </div>
 
-<div class="home-info1 d-flex">
-  <div class="container" style="padding: 100px">
-    <h1 style="padding: 50px">51% de mujeres en Latam ocupa puestos Junior en empresas y menos del 1% en altos cargos.</h1>
+<div class="home-info1 d-flex justify-content-center">
+  <div class="container-info" style="padding: 50px">
+    <h4 style="padding: 90px; text-align: left;"> <strong>3</strong> de cada<strong> 10</strong> puestos en liderazgo y tecnología son ocupados por mujeres en Latinoamérica
+    <br>
+    <br>
+    "Cambiemos esas cifras🖤"</h4>
   </div>
 
-  <div class="container" style="padding: 220px">
+  <div class="container" style="padding: 100px">
     <%= image_tag "tierra.png", class:"imgmundo" %>
   </div>
 </div>
 
-<div class="home-info2">
-  		<div class="container" style="">
-    	<h1 class="home-title">Somos una plataforma de tecnología que entrena a mujeres creativas para potenciar habilidades tech.
+<div class="home-info2 d-flex">
+  		<div class="container" style="position: absolute; padding: 130px;">
+    	<h6 style="text-align: left; padding: 50px;" class="home-title">Hola🤍 somos
+      <br>
+      <strong>Creativa Lab</strong>
+      <br>
+      Somos una plataforma de tecnología que entrena a mujeres creativas para potenciar habilidades tech.
       <br>
       <br>
           01 Eleva tu desarrollo profesional a un siguiente nivel.
           <br>
-          02 Conviértete en una embajadora tech.</h1>
+          02 Conviértete en una embajadora tech.</h6>
+  		</div>
+
+      <div class="container" style="">
+      <%= image_tag "youtube.png", class:"img-youtube" %>
   		</div>
 </div>
 
 <div class="home-info3">
-  		<div class="container" style="">
-    	<h1>Habilidades digitales para directivas del futuro</h1>
+  		<div class="container" style="padding: 150px">
+    	<h4>Habilidades digitales para directivas del futuro</h4>
+      <%= image_tag "womans.png", class:"img-womans" %>
   		</div>
+
 </div>
 
 <div class="home-info3">
-  		<div class="container" style="">
-    	<h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi debitis ab reprehenderit officia! Ducimus porro facilis dicta, quasi aliquid veritatis exercitationem nobis iusto facere, labore vitae accusantium tempora ad officiis.</h1>
-  		</div>
+<h4 style="text-align: center;">Visita nuestro blog</h4>
+<br>
+  <div class="cards-home">
+    <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://images.unsplash.com/photo-1522199755839-a2bacb67c546?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1172&q=80)">
+      Blog1
+    </div>
+
+    <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://images.unsplash.com/photo-1522199794616-8a62b541f762?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1172&q=80)">
+      Blog2
+    </div>
+
+    <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://images.unsplash.com/photo-1519682337058-a94d519337bc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80)">
+      Blog3
+    </div>
+
+
+  </div>
+
 </div>
 
 

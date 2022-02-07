@@ -1,5 +1,5 @@
 .home-banner {
-  background-image:asset-url('fondo.png');
+  background-image:asset-url('banner.png');
   background-size: cover;
   width: 100%;
   text-align: center;
@@ -36,9 +36,15 @@
     font-family: 'Outfit', sans-serif;
 }
 
+.container-info {
+    position: relative;
+    bottom: 13px;
+    left: 416px;
+}
+
 .home-title {
   font-family: 'Outfit', sans-serif;
-  font-size: 30px;
+  font-size: 22px;
 
 }
 
@@ -80,25 +86,52 @@ p {
     border-radius: 10px;
 }
 
-.banner h1, h2 {
+.img-womans {
+    position: absolute;
+    width: 550px;
+    height: 550px;
+    bottom: -1103px;
+    left: 812px;
+    padding: 72px;
+}
+
+.img2 {
+    position: absolute;
+    width: 159px;
+    height: 198px;
+    bottom: 91px;
+    left: 35px;
+    border-radius: 10px;
+}
+
+.banner h1, h2, h4 {
   font-family: 'Outfit', sans-serif;
   text-align: center;
-
+  color: rgb(0, 0, 0);
 
 }
 
-h1 {
-  font-family: 'Outfit', sans-serif;
+h6 {
+  color: white;
 }
 
-.btn-blue {
+
+.h1, h6 {
+  font-family: 'Outfit', sans-serif
+
+}
+
+.btn-light {
 	background-color: #1100CB;
 	margin: 20px;
 	padding: 15px;
 	border: 40px;
 	border-radius: 15px;
-	box-shadow: 05px 05px 05px rgba(0, 0, 0, 0.2);
 	text-align: center;
+  text-decoration: white;
+  color: white;
+  font-family: 'Outfit', sans-serif;
+  border-bottom: #1100CB;
 
 }
 
@@ -108,26 +141,26 @@ a {
   background-color: transparent
 }
 
-.home-info1 {
-  background-color: white;
+.home-info1  {
+  background-image:asset-url('banner1.png');
   background-size: cover;
   width: 100%;
   text-align: center;
-  height: 660px;
+  height: 400px;
 }
 
 .home-info2 {
-  background-color: rgb(235, 233, 233);
+  background-color: #000000;
   background-size: cover;
   width: 100%;
   text-align: center;
-  height: 660px;
+  height: 560px;
 }
 .card-img{
   background-color: white !important;
   height: 83px;
   width: 83px;
-  border-radius: 8px; 
+  border-radius: 8px;
 }
 
 .img5{
@@ -182,3 +215,14 @@ a {
   justify-content: space-around;
   color: #2E5BFF;
 }
+
+
+body {
+  font-family: 'Outfit', sans-serif;
+}
+
+.btn-primary {
+    color: white;
+    border-radius: 8px;
+}
+

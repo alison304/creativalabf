@@ -14,13 +14,12 @@ class CoursesController < ApplicationController
 
   def create
     @course = Course.new(course_params)
-    @course.user = current_user
+  # @course.user = current_user
      if @course.save
-       redirect_to root_path
+       redirect_to courses_path
      else
        render :new
      end
-    redirect_to courses_path
   end
 
   def edit
@@ -43,7 +42,7 @@ class CoursesController < ApplicationController
   private
 
   def course_params
-    params.require(:course).permit(:name, :description, :url)
+    params.require(:course).permit(:name, :description, :photo)
   end
 
   def set_course
