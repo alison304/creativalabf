@@ -23,6 +23,8 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 47px;
+  grid-row-gap: 2rem;
+  padding: 1.5rem 0;
 }
 // .card-product {
 //   overflow: hidden;

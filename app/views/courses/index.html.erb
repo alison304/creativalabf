@@ -56,8 +56,11 @@
     <% @courses.each do |course| %>
       <div class="">
         <div class="cards-container">
+          <% if course.photo.key.nil?  %>
+          <% else %>
           <%= cl_image_tag course.photo.key, height: 130, width: 150, crop: :fill, styles: "object-fit: cover" %>
-            <div class="cards-2">
+            <% end %>
+          <div class="cards-2">
               <h3><%= course.name %></h3>
               <div class="mt-5">
                 <%= link_to 'Empezar', course_path(course), class: "btn btn-primary" %>
