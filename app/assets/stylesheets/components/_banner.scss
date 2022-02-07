@@ -80,6 +80,15 @@ p {
     border-radius: 10px;
 }
 
+.img-youtube {
+  position: absolute;
+    width: 200px;
+    height: 200px;
+    bottom: -586px;
+    left: 543px;
+    padding: 71px;
+}
+
 .banner h1, h2 {
   font-family: 'Outfit', sans-serif;
   text-align: center;
@@ -91,14 +100,17 @@ h1 {
   font-family: 'Outfit', sans-serif;
 }
 
-.btn-blue {
+.btn-light {
 	background-color: #1100CB;
 	margin: 20px;
 	padding: 15px;
 	border: 40px;
 	border-radius: 15px;
-	box-shadow: 05px 05px 05px rgba(0, 0, 0, 0.2);
 	text-align: center;
+  text-decoration: white;
+  color: white;
+  font-family: 'Outfit', sans-serif;
+  border-bottom: #1100CB;
 
 }
 
@@ -113,7 +125,7 @@ a {
   background-size: cover;
   width: 100%;
   text-align: center;
-  height: 660px;
+  height: 400px;
 }
 
 .home-info2 {
@@ -121,13 +133,13 @@ a {
   background-size: cover;
   width: 100%;
   text-align: center;
-  height: 660px;
+  height: 560px;
 }
 .card-img{
   background-color: white !important;
   height: 83px;
   width: 83px;
-  border-radius: 8px; 
+  border-radius: 8px;
 }
 
 .img5{
@@ -181,4 +193,8 @@ a {
   display: flex;
   justify-content: space-around;
   color: #2E5BFF;
+}
+
+body {
+  font-family: 'Outfit', sans-serif;
 }

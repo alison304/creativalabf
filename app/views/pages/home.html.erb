@@ -17,7 +17,7 @@
 					<p>
 					Entrenamos en <strong>habilidades digitales</strong> para las organizaciones del futuro.
 					</p>
-				<%= link_to 'Ver cursos', courses_path, class: "btn btn-blue" %>
+				<a class="btn btn-light" href="/courses" style="margin: 0;"> <strong>Ver cursos</strong></a>
 				</div>
   		</div>
 
@@ -29,36 +29,52 @@
 </div>
 
 <div class="home-info1 d-flex">
-  <div class="container" style="padding: 100px">
-    <h1 style="padding: 50px">51% de mujeres en Latam ocupa puestos Junior en empresas y menos del 1% en altos cargos.</h1>
+  <div class="container" style="padding: 50px">
+    <h4 style="padding: 90px; text-align: left;">51% de mujeres en Latam ocupa puestos Junior en empresas y menos del 1% en altos cargos.</h4>
   </div>
 
-  <div class="container" style="padding: 220px">
+  <div class="container" style="padding: 100px">
     <%= image_tag "tierra.png", class:"imgmundo" %>
   </div>
 </div>
 
-<div class="home-info2">
+<div class="home-info2 d-flex">
   		<div class="container" style="">
-    	<h1 class="home-title">Somos una plataforma de tecnología que entrena a mujeres creativas para potenciar habilidades tech.
+    	<h4 style="text-align: left; padding: 50px;" class="home-title">Somos una plataforma de tecnología que entrena a mujeres creativas para potenciar habilidades tech.
       <br>
       <br>
           01 Eleva tu desarrollo profesional a un siguiente nivel.
           <br>
-          02 Conviértete en una embajadora tech.</h1>
+          02 Conviértete en una embajadora tech.</h4>
+  		</div>
+
+      <div class="container" style="">
+      <%= image_tag "youtube.png", class:"img-youtube" %>
   		</div>
 </div>
 
 <div class="home-info3">
-  		<div class="container" style="">
+  		<div class="container" style="padding: 150px">
     	<h1>Habilidades digitales para directivas del futuro</h1>
   		</div>
+
 </div>
 
 <div class="home-info3">
-  		<div class="container" style="">
-    	<h1>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi debitis ab reprehenderit officia! Ducimus porro facilis dicta, quasi aliquid veritatis exercitationem nobis iusto facere, labore vitae accusantium tempora ad officiis.</h1>
-  		</div>
+  <div class="cards-home">
+    <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/breakfast.jpg)">
+      Blog1
+    </div>
+
+    <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/lunch.jpg)">
+      Blog2
+    </div>
+
+    <div class="card-category" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url(https://raw.githubusercontent.com/lewagon/fullstack-images/master/uikit/dinner.jpg)">
+      Blog3
+    </div>
+  </div>
+
 </div>
 
 
