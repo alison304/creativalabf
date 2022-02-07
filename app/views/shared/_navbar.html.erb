@@ -1,4 +1,4 @@
-<div class="navbar navbar-expand-sm navbar-light navbar-lewagon fixed-top">
+<div class="navbar navbar-expand-sm navbar-light navbar-lewagon navbar-lewagon navbar-lewagon-white">
   <div class="container-fluid">
     <%= link_to root_path, class: "navbar-brand" do %>
       <%= image_tag "logo1.png" %>
@@ -9,16 +9,17 @@
     </button>
 
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto" style="position: absolute; bottom: 14px; left: 1160px;">
+      <ul class="navbar-nav me-auto">
         <% if user_signed_in? %>
-          <li class="nav-item active" style="padding: 8px">
-            <%= link_to 'Inicio', root_path %>
+          <li class="nav-item active" style="margin: 17px;">
+            <%= link_to 'Inicio', root_path, class:"btn btn-secondary" %>
+            <%= link_to 'Mis cursos', courses_path, class:"btn btn-secondary" %>
           <%# </li> %>
           <%# <li class="nav-item">
             <%= link_to 'Ver cursos', courses_path, class: "btn btn-blue" %>
          <%#  </li> %>
-          <li class="nav-item dropdown">
-            <%= image_tag "https://kitt.lewagon.com/placeholder/users/ssaunier", class: "avatar dropdown-toggle", id: "navbarDropdown", data: { bs_toggle: "dropdown" }, 'aria-haspopup': true, 'aria-expanded': false %>
+          <li class="nav-item dropdown" style="margin: 15px">
+            <%= image_tag "avatar.png", class: "avatar dropdown-toggle", id: "navbarDropdown", data: { bs_toggle: "dropdown" }, 'aria-haspopup': true, 'aria-expanded': false %>
             <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
               <%= link_to "Mis cursos", courses_path, class: "dropdown-item" %>
 
@@ -28,7 +29,7 @@
           </li>
         <% else %>
           <li class="nav-item">
-            <%= link_to "Login", new_user_session_path, class: "nav-link" %>
+            <%= link_to "Iniciar sesión", new_user_session_path, class: "btn btn-outline-primary" %>
           </li>
         <% end %>
       </ul>
