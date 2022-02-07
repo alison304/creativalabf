@@ -89,21 +89,20 @@ h2, p {
 
 .img-womans {
     position: absolute;
-    width: 550px;
-    height: 550px;
-    bottom: -1103px;
-    left: 812px;
+    width: 580px;
+    height: 580px;
+    bottom: -1011px;
+    left: 736px;
     padding: 72px;
 }
 
-.img2 {
-    position: absolute;
-    width: 159px;
-    height: 198px;
-    bottom: 91px;
-    left: 35px;
-    border-radius: 10px;
+.figuras {
+  position: absolute;
+  bottom: 465px;
+    left: -628px;
+    height: 39px;
 }
+
 
 .banner h1, h2, h4 {
   font-family: 'Outfit', sans-serif;
@@ -116,6 +115,10 @@ h6 {
   color: white;
 }
 
+h5 {
+  color: rgb(0, 0, 0);
+  text-align: center;
+}
 
 .h1, h6 {
   font-family: 'Outfit', sans-serif
@@ -157,6 +160,16 @@ a {
   text-align: center;
   height: 560px;
 }
+
+.home-info3 {
+  background-color: #345cfa;
+}
+
+.home-info4 {
+  background-color: #345cfa;
+}
+
+
 .card-img{
   background-color: white !important;
   height: 83px;
