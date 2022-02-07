@@ -7,10 +7,10 @@
   padding: 0px 50px;
   color: rgba(255, 255, 255, 0.788);
   // FIXED BOTTOM
-  // position: fixed;
-  // bottom: 0;
-  // width: 100%;
-  // left: 0;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  left: 0;
 
 }
 .footer-links {
@@ -39,6 +39,6 @@ h3{
   font-size: 14px;
 }
 
-.footer-login{
+// .footer-login{
 
-}
+// }
