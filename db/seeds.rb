@@ -20,15 +20,16 @@ User.create(email:  "daniel@gmail.com", password: "Daniel123", password_confirma
 # Course.create(description: "Curso basico de JavaScript", name: "JavaScript")
 # Course.create(description: "Curso basico de CSS", name: "CSS")
 
-Course.create(description: "Aprende a crear tus propias páginas", name: "Crea una Landing Page para un perfil profesional")
-Course.create(description: "Aprende a crear tus propias páginas", name: "Lanzamiento de una web")
-Course.create(description: "Aprende a crear tus propias páginas", name: "Crea un e-commerce para tu marca")
-Course.create(description: "Aprende a crear tus propias páginas", name: "Liderazgo Digital Growth")
 
-Detail.create(name: "Etiquetas basicas", content: "Aprende a manejar las etiquetas basicas que te permitiran aprender las estructuras basicas de un archivo HTML", course_id: 1)
-Detail.create(name: "Variables en JavaScript", content: "Aprende como funciona la asignacion de Variables en JavaScript", course_id: 2)
-Detail.create(name: "Dale un diseño a tu pagina", content: "CSS te permite darle estilo a todo lo que has creado en HTML", course_id: 3)
+course1 = Course.create(description: "Aprende a crear tus propias páginas", name: "Crea una Landing Page para un perfil profesional")
+course2 = Course.create(description: "Aprende a crear tus propias páginas", name: "Lanzamiento de una web")
+course3 = Course.create(description: "Aprende a crear tus propias páginas", name: "Crea un e-commerce para tu marca")
+course4 = Course.create(description: "Aprende a crear tus propias páginas", name: "Liderazgo Digital Growth")
 
+Detail.create!(name: "Etiquetas basicas", content: "Aprende a manejar las etiquetas basicas que te permitiran aprender las estructuras basicas de un archivo HTML", course_id: course1.id)
+Detail.create!(name: "Variables en JavaScript", content: "Aprende como funciona la asignacion de Variables en JavaScript", course_id: course2.id)
+Detail.create!(name: "Dale un diseño a tu pagina", content: "CSS te permite darle estilo a todo lo que has creado en HTML", course_id: course3.id)
+Detail.create!(name: "Dale un diseño a tu pagina", content: "CSS te permite darle estilo a todo lo que has creado en HTML", course_id: course4.id)
 # Exam.create(question: "¿Cuáles son los roles de las etiquetas HTML?", answer_solution: "a", detail_id: 1, answerA: "Para definir la relación entre un documento y un recurso externo")
 # Exam.create(question: "¿Cuáles son los roles de las etiquetas HTML?", answer_solution: "a", detail_id: 1, answerB: "Para crear un formulario")
 # Exam.create(question: "¿Cuáles son los roles de las etiquetas HTML?", answer_solution: "a", detail_id: 1, answerC: "Para dar estilo a la pagina")
