@@ -1,10 +1,18 @@
-<ul>
-  <% @exams.each do |exam| %>
-    <li><%= exam.question  %></li>
-    <%= simple_form_for [exam, @answer] do |f| %>
-      <%= f.input :answer,     as: :radio_buttons, collection: [[exam.answerA, "A"], [exam.answerB, "B"], [exam.answerB, "C"]]%>
-      <%= f.submit %>
-    <% end %>
-    <%# <%= link_to "show", "#{details_path}/#{params[:detail_id]}/exams/#{exam.id}"%> %>
-  <% end %>
-</ul>
+
+<div class="container">
+  <div class="row">
+    <div class="col-8 mx-auto">
+      <h2><%= @detail.name %></h2>
+      <% @exams.each do |exam| %>
+        <%= exam.question %>
+          <%= simple_form_for [exam, @answer] do |f| %>
+            <%= f.input :answer, label:"Selecciona tu respuesta", as: :radio_buttons, collection: [exam.answerA, exam.answerB, exam.answerB]%>
+          <% end %>
+        <% end %>
+      <%#= link_to 'Show', detail_exam_path %>
+      <%#= link_to 'Create', edit_detail_exam_path(exam) %>
+      <%#= link_to 'Destroy', exam, method: :delete, data: { confirm: 'Are you sure?'%>
+      <button type="submit" class="btn btn-primary mb-2">Enviar</button>
+    </div>
+  </div>
+</div>
