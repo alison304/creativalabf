@@ -38,8 +38,8 @@
 
 .container-info {
     position: relative;
-    bottom: 13px;
-    left: 416px;
+    bottom: 60px;
+    left: 580px;
 }
 
 .home-title {
@@ -48,8 +48,9 @@
 
 }
 
-p {
+h2, p {
   font-family: 'Outfit', sans-serif;
+  text-align: left;
 }
 
 
@@ -107,7 +108,7 @@ p {
 .banner h1, h2, h4 {
   font-family: 'Outfit', sans-serif;
   text-align: center;
-  color: rgb(0, 0, 0);
+  color: white;
 
 }
 
@@ -142,7 +143,7 @@ a {
 }
 
 .home-info1  {
-  background-image:asset-url('banner1.png');
+  background-color: #000000;
   background-size: cover;
   width: 100%;
   text-align: center;
@@ -225,4 +226,3 @@ body {
     color: white;
     border-radius: 8px;
 }
-
