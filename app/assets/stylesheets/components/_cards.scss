@@ -22,7 +22,7 @@
 .cards-c {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-gap: 16px;
+  grid-gap: 47px;
 }
 // .card-product {
 //   overflow: hidden;
@@ -35,12 +35,12 @@
   height: 150px;
   width: 150px;
   padding-left: 10px;
+  border-radius: 20px;
 }
 
 .img7{
-  height: 100px;
-  width: 100px;
-  border-radius: 8px;
+  height: 301px;
+  width: 281px;
 }
 
 // @media(max-width: 50px) {
