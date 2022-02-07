@@ -6,7 +6,6 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-
 puts "limpiando base de datos"
 
 Exam.destroy_all
@@ -16,13 +15,9 @@ User.destroy_all if Rails.env.development?
 
 
 puts "creando nuevas seeds"
-User.create(email:  "carolina@gmail.com", password: "Carolina123", password_confirmation: "Carolina123")
-User.create(email:  "paola@gmail.com", password: "Paola123", password_confirmation: "Paola123")
-User.create(email:  "daniel@gmail.com", password: "Daniel123", password_confirmation: "Daniel123")
-
-# Course.create(description: "Curso basico de HTML", name: "HTML")
-# Course.create(description: "Curso basico de JavaScript", name: "JavaScript")
-# Course.create(description: "Curso basico de CSS", name: "CSS")
+usuario1 = User.create(email:  "carolina@gmail.com", password: "Carolina123", password_confirmation: "Carolina123")
+usuario2 = User.create(email:  "paola@gmail.com", password: "Paola123", password_confirmation: "Paola123")
+usuario3 = User.create(email:  "daniel@gmail.com", password: "Daniel123", password_confirmation: "Daniel123")
 
 course1 = Course.create(description: "¿Sabías que, siendo developer, diseñador, marketero, entre otros, puedes crear tu propio landing page?:cara_pensativa::lupa:
 Aprende a crear tu landing page desde cero
@@ -56,6 +51,14 @@ Detail.create!(name: "Dale un diseño a tu pagina", content: "https://www.youtub
 Exam.create(question: "La etiqueta <p></p> sirve para?", answer_solution: "a", detail: detail1, answerA: "crea un nuevo parrafo")
 Exam.create(question: "What does HTML stand for?", answer_solution: "c", detail: detail1, answerB: "colocar una imagen")
 Exam.create(question: "What does HTML stand for?", answer_solution: "b", detail: detail1, answerC: "crear un formulario")
+
+Review.create(content: "Aprende" , detail: detail1, user: usuario1)
+Review.create(content: "crear " , detail: detail1, user: usuario2)
+Review.create(content: "tus propias páginas" , detail: detail1, user: usuario3)
+
+# Course.create(description: "Curso basico de HTML", name: "HTML")
+# Course.create(description: "Curso basico de JavaScript", name: "JavaScript")
+# Course.create(description: "Curso basico de CSS", name: "CSS")
 
 # Exam.create(question: "¿Cuáles son los roles de las etiquetas HTML?", answer_solution: "a", detail_id: 1, answerA: "Para definir la relación entre un documento y un recurso externo")
 # Exam.create(question: "¿Cuáles son los roles de las etiquetas HTML?", answer_solution: "a", detail_id: 1, answerB: "Para crear un formulario")
