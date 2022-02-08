@@ -1,9 +1,9 @@
 <div class="container">
 
   <div class="login-form">
-      <h4> <strong>Bienvenida de vuelta</strong>
+      <h5> <strong>Bienvenida de vuelta</strong>
       <br>
-      Que bueno verte otra vez :)</h4>
+      Que bueno verte otra vez :)</h5>
 
       <%= simple_form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
         <div class="form-inputs">
@@ -12,16 +12,16 @@
                       required: false,
                       autofocus: true,
                       input_html: { autocomplete: "email" } %>
-                      <br>
+
           <%= f.input :password,
                       label: "Contraseña",
                       required: false,
                       input_html: { autocomplete: "current-password" } %>
-          <%= f.input :remember_me, as: :boolean if devise_mapping.rememberable? %>
-          <br>
+          <%= f.input :remember_me, label: "Recordar", as: :boolean if devise_mapping.rememberable? %>
+
           <%= f.submit "Ingresar", class:"btn btn-primary" %>
           <br>
-          <br>
+
 
           <a href="/users/sign_up" class="enlace-login">Regístrate</a>
           <br>
