@@ -2,12 +2,12 @@
   <div class="exam-admi">
     <p><%= @detail.name %></p>
     <%= simple_form_for [@detail, @exam] do |f| %>
-        <%= f.input :question, input_html: { class: "nice-class" } %>
+        <%= f.input :question%>
         <%= f.input :answerA%>
         <%= f.input :answerB%>
         <%= f.input :answerC%>
         <%= f.input :answer_solution%>
-        <%= f.submit %>
+        <%= f.submit 'Enviar', class: 'btn btn-primary mt-2' %>
     <% end %>
   </div>
 </div>
