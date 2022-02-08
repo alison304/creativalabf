@@ -28,8 +28,8 @@
             <% end %>
             <div class="chat-input">
                 <%= simple_form_for [ @detail, @review ] do |f| %>
-                  <%= f.input :content %>
-                  <%= f.submit "Submit review", class: "btn btn-secondary btn-sm btn-lg" %>
+                  <%= f.input :content, label: "Comentar" %>
+                  <%= f.submit "Enviar", class: "btn btn-secondary btn-sm btn-lg" %>
                 <% end %>
             </div>
           </div>
@@ -40,5 +40,8 @@
   <div class="d-flex justify-content-end cuestionario">
 
     <%= link_to "Cuestionario >" , detail_exams_path(@detail), class:"btn btn-primary btn-sm btn-lg"%>
+
+  <%# preguntar a midory   %>
+    <%= link_to "Cuestionario" , new_exam_answer_path(@detail.exams.first), class:"btn btn-primary"%>
   </div>
 </div>

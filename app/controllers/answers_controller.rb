@@ -1,8 +1,8 @@
 class AnswersController < ApplicationController
   before_action :set_answer, only: %i[ edit update show destroy ]
-  before_action :set_exam, only: %i[ new create ]
+  before_action :set_exam, only: %i[ new create]
   def index
-    @answer = Answer.all
+    @answers = current_user.answers
   end
 
   def show
@@ -10,17 +10,26 @@ class AnswersController < ApplicationController
 
   def new
     @answer = Answer.new
+    @exam = Exam.find(params[:exam_id])
+    @exams = @exam.detail.exams
+    @detail = @exam.detail
   end
 
   def create
     @answer = Answer.new(answer_params)
+    # @answer.approved = @approved
+    @exam = Exam.find(params[:exam_id])
+    if @answer.answer == @exam.answer_solution
+      @answer.approved = true
+    else
+      @answer.approved = false
+    end
     @answer.user = current_user
     @answer.exam = @exam
-    if @answer.save!
-      redirect_to exams_path
+    if @answer.save
+      redirect_to new_exam_answer_path(@exam)
     else
-      @exams = Exam.all
-      render "exams/index"
+      render :new
     end
   end
 
