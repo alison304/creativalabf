@@ -11,7 +11,7 @@ Rails.application.routes.draw do
     resources :answers, only: [ :new, :create ]
   end
   # put "take_an_exam", to: ''
-  # resources :answers, only: [ :edit, :update, :destroy, :index ]
+  resources :answers, only: [ :index ]
   resources :reviews, only: [ :edit, :update, :destroy, :index ]
   resources :courses do
     resources :details, only: [:index, :show]

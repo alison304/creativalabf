@@ -1,4 +1,4 @@
-<div class="container exam-admi">
+<div class="container exam-admi ">
   <div class="row">
     <div class="col-8 mx-auto">
       <h2><%= @detail.name %></h2>
@@ -9,6 +9,7 @@
         <% end %>
       <% end %>
       <button type="submit" class="btn btn-primary mb-2">Enviar</button>
+      <%= link_to 'Regresar', course_detail_path(@detail.course, @detail), class: "btn btn-primary mb-2" %>
     </div>
   </div>
 </div>

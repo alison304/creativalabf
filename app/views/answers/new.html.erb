@@ -1,8 +1,27 @@
-<div class="container">
-  <div class="exam-admi">
-    <%= simple_form_for [@exam, @answer] do |f| %>
-      <%= f.input :answer, label:"Selecciona tu respuesta", as: :radio_buttons, collection: [@exam.answerA, @exam.answerB, @exam.answerC]%>
-      <%= f.submit "Enviar", class: "btn btn-primary" %>
-    <% end %>
+<div class="container exam-admi">
+  <div class="row">
+    <div class="col-8 mx-auto">
+      <h2><strong><%= @detail.name %></strong></h2>
+      <% @exams.each do |exam| %>
+        <div class="mt-4">
+        <p><strong><%= exam.question %></strong></p>
+        <%= simple_form_for [exam, @answer] do |f| %>
+          <div class="form-inputs p-0">
+            <%= f.input :answer, label:"Selecciona tu respuesta", as: :radio_buttons, collection: [exam.answerA,
+          exam.answerB, exam.answerC]%>
+          </div>
+          <div class="form-actions">
+            <%= f.button :submit, "Responder", :as => :hidden, class: 'btn btn-primary btn-sm flex-item mb-5'%>
+          </div>
+        <% end %>
+        </div>
+      <% end %>
+      <div class="mt-4" >
+        <%= link_to 'Enviar' , answers_path, class: "btn btn-block  btn-success mb-2" %>
+      </div>
+      <div class="mt-4">
+        <%= link_to 'Regresar' , course_detail_path(@detail.course, @detail), class: "btn btn-primary btn-sm mb-2 " %>
+      </div>
+    </div>
   </div>
 </div>
