@@ -55,31 +55,3 @@ Exam.create(question: "What does HTML stand for?", answer_solution: "b", detail:
 Review.create(content: "Aprende" , detail: detail1, user: usuario1)
 Review.create(content: "crear " , detail: detail1, user: usuario2)
 Review.create(content: "tus propias páginas" , detail: detail1, user: usuario3)
-
-# Course.create(description: "Curso basico de HTML", name: "HTML")
-# Course.create(description: "Curso basico de JavaScript", name: "JavaScript")
-# Course.create(description: "Curso basico de CSS", name: "CSS")
-
-# Exam.create(question: "¿Cuáles son los roles de las etiquetas HTML?", answer_solution: "a", detail_id: 1, answerA: "Para definir la relación entre un documento y un recurso externo")
-# Exam.create(question: "¿Cuáles son los roles de las etiquetas HTML?", answer_solution: "a", detail_id: 1, answerB: "Para crear un formulario")
-# Exam.create(question: "¿Cuáles son los roles de las etiquetas HTML?", answer_solution: "a", detail_id: 1, answerC: "Para dar estilo a la pagina")
-
-# Exam.create(question: "¿Por qué las etiquetas <title> y <meta name='description'> son tan importantes?", answer_solution: "a", detail_id: 1, answerA: "Porque ambas son parte básica de la optimización en motores de búsqueda")
-# Exam.create(question: "¿Por qué las etiquetas <title> y <meta name='description'> son tan importantes?", answer_solution: "a", detail_id: 1, answerB: "Para crear un formulario")
-# Exam.create(question: "¿Por qué las etiquetas <title> y <meta name='description'> son tan importantes?", answer_solution: "a", detail_id: 1, answerC: "Para dar estilo a la pagina")
-
-# Exam.create(question: "¿Cómo agregamos una imagen en HTML?", answer_solution: "b", detail_id: 1, answerA: "<link src='images/logo.png' type='text/css' href='style.css'>")
-# Exam.create(question: "¿Cómo agregamos una imagen en HTML?", answer_solution: "b", detail_id: 1, answerB: "<img src='images/logo.png' alt='Company logo'>")
-# Exam.create(question: "¿Cómo agregamos una imagen en HTML?", answer_solution: "b", detail_id: 1, answerC: "<a src='images/logo.png'></a>")
-
-# Exam.create(question: "¿Para qué utilizamos la etiqueta <link>?", answer_solution: "a", detail_id: 1, answerA: "Para definir la relación entre un documento y un recurso externo")
-# Exam.create(question: "¿Para qué utilizamos la etiqueta <link>?", answer_solution: "a", detail_id: 1, answerB: "Para crear un formulario")
-# Exam.create(question: "¿Para qué utilizamos la etiqueta <link>?", answer_solution: "a", detail_id: 1, answerC: "Para dar estilo a la pagina")
-
-# Exam.create(question: "¿Cómo se enfatiza una palabra en un párrafo?", answer_solution: "c", detail_id: 1, answerA: "Con la etiqueta <a></a>")
-# Exam.create(question: "¿Cómo se enfatiza una palabra en un párrafo?", answer_solution: "c", detail_id: 1, answerB: "Con la etiqueta <b></b>")
-# Exam.create(question: "¿Cómo se enfatiza una palabra en un párrafo?", answer_solution: "c", detail_id: 1, answerC: "Con las etiquetas <em> o <strong>")
-
-# Exam.create(question: "¿Con qué etiqueta escribimos un parrafo?", answer_solution: "b", detail_id: 1, answerA: "<button></button>")
-# Exam.create(question: "¿Con qué etiqueta escribimos un parrafo?", answer_solution: "b", detail_id: 1, answerB: "<p></p>")
-# Exam.create(question: "¿Con qué etiqueta escribimos un parrafo?", answer_solution: "b", detail_id: 1, answerC: "<strong>")
