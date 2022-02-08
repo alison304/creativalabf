@@ -14,8 +14,6 @@
 }
 
 
-
-
 // Smallest device
 
 .cards-detail {
@@ -76,27 +74,6 @@
   }
 }
 
-// .btn-flat {
-//   color: white;
-//   padding: 8px 24px;
-//   border-radius: 4px;
-//   font-weight: bold;
-//   background: #1EDD88;
-//   transition: background 0.3s ease;
-// }
-
-// .btn-flat:hover {
-//   background: #1BCB7F;
-//   color: white;
-// }
-// .container-details{
-//   margin-top: 20px;
-//   a{
-//     margin-top: 10px;
-//     margin-bottom: 10px;
-
-//   }
-// }
 
 .card-button{
   margin: 100px 50px;
@@ -121,9 +98,13 @@
 }
 .chat-container {
     flex-grow: 1;
-    padding: 16px;
+    padding: 30px;
     display: flex;
     flex-direction: column;
+    background-color: #FFCAD4;
+    position: absolute;
+    bottom: 5px;
+    left: 51px;
 }
 .chat-conversations {
     flex-grow: 1;
@@ -150,4 +131,22 @@ img {
   margin-bottom: 100px;
   margin-top: 18px;
   margin-right: 46px;
+}
+
+.btn-lg {
+  color: #ffffff;
+    background-color: #1100CB;
+    border-color: #1100CB;
+    box-shadow: black;
+}
+
+.bnt-lg:hover {
+  background-color: black;
+}
+
+.container-modulo {
+  background-color: #1E2122;
+  padding: 80px;
+  margin-left: 0px;
+  margin-right: 0px;
 }

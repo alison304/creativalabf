@@ -12,29 +12,25 @@
       <ul class="navbar-nav me-auto">
         <% if user_signed_in? %>
           <li class="nav-item active" style="margin: 17px;">
-            <%= link_to 'Inicio', root_path, class:"btn btn-secondary" %>
-            <%= link_to 'Mis cursos', courses_path, class:"btn btn-secondary" %>
-            <%= link_to "Cerrar sesión", destroy_user_session_path, method: :delete, class: "dropdown-item" %>
+            <%= link_to 'Mis cursos', courses_path, class:"btn btn-dark btn-sm" %>
+            <%= link_to "Cerrar sesión", destroy_user_session_path, method: :delete, class: "btn btn-dark btn-sm" %>
           </li>
           <%# <li class="nav-item">
             <%= link_to 'Ver cursos', courses_path, class: "btn btn-blue" %>
          <%#  </li> %>
 
 
-          <li class="nav-item dropdown" style="margin: 25px">
+          <li class="nav-item dropdown" style="margin: 10px">
             <%= image_tag "avatar.png", class: "avatar dropdown-toggle", id: "navbarDropdown", data: { bs_toggle: "dropdown" }, 'aria-haspopup': true, 'aria-expanded': false %>
-            <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
-              <%= link_to "Mis cursos", courses_path, class: "dropdown-item" %>
 
-              <%= link_to "Cuestionario", exams_path, class: "dropdown-item" %>
-              <%= link_to "Cerrar sesión", destroy_user_session_path, method: :delete, class: "dropdown-item" %>
-            </div>
           </li>
 
 
         <% else %>
           <li class="nav-item">
-            <%= link_to "Iniciar sesión", new_user_session_path, class: "btn btn-outline-primary" %>
+            <%= link_to "Iniciar sesión", new_user_session_path, class: "btn btn-secondary btn-sm bt btn-navbar" %>
+            <a href="/users/sign_up" class="btn btn-secondary btn-sm btn-navbar">Regístrate</a>
+
           </li>
         <% end %>
       </ul>

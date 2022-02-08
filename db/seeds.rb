@@ -44,14 +44,13 @@ En Creativa diseñamos un programa de 1 mes que te entrenará para desarrollar h
 :profesor: Tendrás el acompañamiento de expertos durante todo el programa.
 :trofeo: Tu aprendizaje será basado en retos y crearás webs durante el programa." , name: "Liderazgo Digital Growth")
 
-detail1 = Detail.create!(name: "Etiquetas basicas", content: "https://www.youtube.com/embed/D-3Qg4pf-E4", course: course1)
-Detail.create!(name: "Variables en JavaScript", content: "https://www.youtube.com/embed/LRfaU7bdnPY", course: course1)
-Detail.create!(name: "Dale un diseño a tu pagina", content: "https://www.youtube.com/embed/9cGqmcWJ2JA", course: course1)
+detail1 = Detail.create!(name: "Moodboard y Branding", content: "https://www.youtube.com/embed/D-3Qg4pf-E4", course: course1)
+Detail.create!(name: "Diseño de Home principal", content: "https://www.youtube.com/embed/LRfaU7bdnPY", course: course1)
+Detail.create!(name: "Creación de CMS Blog", content: "https://www.youtube.com/embed/9cGqmcWJ2JA", course: course1)
 
 Exam.create(question: "La etiqueta <p></p> sirve para?", answer_solution: "a", detail: detail1, answerA: "crea un nuevo parrafo")
 Exam.create(question: "What does HTML stand for?", answer_solution: "c", detail: detail1, answerB: "colocar una imagen")
 Exam.create(question: "What does HTML stand for?", answer_solution: "b", detail: detail1, answerC: "crear un formulario")
 
 Review.create(content: "Aprende" , detail: detail1, user: usuario1)
-Review.create(content: "crear " , detail: detail1, user: usuario2)
-Review.create(content: "tus propias páginas" , detail: detail1, user: usuario3)
+Review.create(content: "crear " , detail: detail1, user: usuario1)
