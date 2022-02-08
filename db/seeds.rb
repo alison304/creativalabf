@@ -44,7 +44,7 @@ En Creativa diseñamos un programa de 1 mes que te entrenará para desarrollar h
 :profesor: Tendrás el acompañamiento de expertos durante todo el programa.
 :trofeo: Tu aprendizaje será basado en retos y crearás webs durante el programa." , name: "Liderazgo Digital Growth")
 
-detail1 = Detail.create!(name: "Etiquetas basicas", content: "https://www.youtube.com/embed/D-3Qg4pf-E4", course: course1)
+detail1 = Detail.create!(name: "Etiquetas básicas", content: "https://www.youtube.com/embed/D-3Qg4pf-E4", course: course1)
 Detail.create!(name: "Variables en JavaScript", content: "https://www.youtube.com/embed/LRfaU7bdnPY", course: course1)
 Detail.create!(name: "Dale un diseño a tu pagina", content: "https://www.youtube.com/embed/9cGqmcWJ2JA", course: course1)
 
@@ -55,6 +55,6 @@ Exam.create!(question: "¿Cuál de las siguientes es la forma correcta de crear 
 Exam.create!(question: "¿Cuál es el HTML correcto para insertar una imagen de fondo?", answer_solution: "b", detail: detail7, answerA: "<background img='background.gif'>", answerB: "<body style='background-image:url(background.gif)'>", answerC: "<body background='background.gif'>")
 Exam.create!(question: "¿Qué código es correcto para una imagen en html?", answer_solution: "c", detail: detail7, answerA: "<img src='pic_mountain.jpg'/", answerB: "</DOCTYPE>", answerC: "</DOCTYPE html>")
 
-Review.create(content: "Aprende" , detail: detail1, user: usuario1)
-Review.create(content: "crear " , detail: detail1, user: usuario2)
-Review.create(content: "tus propias páginas" , detail: detail1, user: usuario3)
+
+Review.create(content: "Aprende", detail: detail1, user: usuario1)
+Review.create(content: "crear ", detail: detail1, user: usuario1)
