@@ -10,10 +10,12 @@ class AnswersController < ApplicationController
 
   def new
     @answer = Answer.new
+    @exam = Exam.find(params[:exam_id])
   end
 
   def create
     @answer = Answer.new(answer_params)
+    # @answer.approved = @approved
     @answer.user = current_user
     @answer.exam = @exam
     if @answer.save!
