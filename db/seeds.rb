@@ -52,9 +52,9 @@ Exam.create(question: "La etiqueta <p></p> sirve para?", answer_solution: "a", d
 Exam.create(question: "What does HTML stand for?", answer_solution: "c", detail: detail1, answerB: "colocar una imagen")
 Exam.create(question: "What does HTML stand for?", answer_solution: "b", detail: detail1, answerC: "crear un formulario")
 
-Review.create(content: "Aprende" , detail: detail1, user: usuario1)
-Review.create(content: "crear " , detail: detail1, user: usuario2)
-Review.create(content: "tus propias páginas" , detail: detail1, user: usuario3)
+Review.create(content: "Aprende", detail: detail1, user: usuario1)
+Review.create(content: "crear ", detail: detail1, user: usuario1)
+# Review.create(content: "tus propias páginas" , detail: detail1, user: usuario3)
 
 # Course.create(description: "Curso basico de HTML", name: "HTML")
 # Course.create(description: "Curso basico de JavaScript", name: "JavaScript")

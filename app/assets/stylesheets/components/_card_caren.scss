@@ -16,9 +16,7 @@
 
 // Cards category de home:
 
-// Smallest device
-@media (min-width: 100px) and (max-width: 575px) {
-  .cards-home {
+
 
 .cards-detail {
   display: grid;
@@ -42,7 +40,7 @@
 .cards-detail {
     grid-template-columns: 1fr;
   }
-
+}
 // Medium devices (tablets, 768px and up)
 @media (min-width: 768px) {
 
@@ -53,12 +51,12 @@
 
 // Large devices (desktops, 992px and up)
 @media (min-wid: 992px) {
-  
+
 
  .cards-detail {
     grid-template-columns: 1fr 1fr 1fr;
   }
-
+}
 // Extra large devices (large desktops, 1200px and up)
 @media (min-width: 1200px) {
 
@@ -110,11 +108,11 @@
     width:100%;
     height: 100%;
 }
-.profesor {
-    display:flex;
-    justify-content: space-between;
+// .profesor {
+//     display:flex;
+//     justify-content: space-between;
 
-}
+// }
 .chat-container {
     flex-grow: 1;
     padding: 16px;
@@ -123,7 +121,7 @@
 }
 .chat-conversations {
     flex-grow: 1;
-    padding: 16px 0;
+    padding: 16px 0px;
     height: 336px;
 
 }
@@ -147,3 +145,10 @@ img {
   margin-top: 18px;
   margin-right: 46px;
 }
+.head-detail{
+  color:#6610f2;
+  font-weight: bold;
+}
+// .fab{
+//   color:#6610f2;
+// }
