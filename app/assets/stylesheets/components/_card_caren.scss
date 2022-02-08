@@ -14,7 +14,12 @@
 }
 
 
+
+
+
+
 // Smallest device
+
 
 .cards-detail {
   display: grid;
@@ -52,6 +57,8 @@
   }
 }
 
+
+
 // Medium devices (tablets, 768px and up)
 @media (min-width: 768px) {
   .cards-detail {
@@ -60,6 +67,7 @@
 }
 // Large devices (desktops, 992px and up)
 @media (min-wid: 992px) {
+
  .cards-detail {
     grid-template-columns: 1fr 1fr 1fr;
   }
@@ -91,11 +99,11 @@
     width:100%;
     height: 100%;
 }
-.profesor {
-    display:flex;
-    justify-content: space-between;
+// .profesor {
+//     display:flex;
+//     justify-content: space-between;
 
-}
+// }
 .chat-container {
     flex-grow: 1;
     padding: 16px;
@@ -104,7 +112,7 @@
 }
 .chat-conversations {
     flex-grow: 1;
-    padding: 16px 0;
+    padding: 16px 0px;
     height: 336px;
 
 }
@@ -128,3 +136,10 @@ img {
   margin-top: 18px;
   margin-right: 46px;
 }
+.head-detail{
+  color:#6610f2;
+  font-weight: bold;
+}
+// .fab{
+//   color:#6610f2;
+// }
