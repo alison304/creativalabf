@@ -14,9 +14,22 @@
 }
 
 
-// Cards category de home:
+
 
 // Smallest device
+
+.cards-detail {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 16px;
+  padding: 50px;
+}
+
+.cards-detail {
+    margin-top: 84px;
+    height: calc(34vh - -351px);
+}
+
 @media (min-width: 100px) and (max-width: 575px) {
   .cards-detail {
     display: grid;
