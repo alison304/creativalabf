@@ -1,26 +1,25 @@
-<br>
-<div class="container">
-  <h2 style = "font-family: 'Nunito'; margin-bottom: 15px; font-weight: bold; color:gray; "><%= @course.name %></h2>
+<div class="container-modulo">
+  <h2 style = "font-weight: bold; margin-bottom: 30px; "><%= @course.name %></h2>
   <div class="comentario">
     <div class="row">
       <div class = "col-2">
-        <h5><%= link_to @course.details.first.name, course_detail_path(@detail.course,@detail.course.details.first), class: "btn btn-success btn-lg" %></h5>
-        <h5><%= link_to @course.details.second.name, course_detail_path(@detail.course,@detail.course.details.second), class: "btn btn-success btn-lg" %></h5>
-        <h5><%= link_to @course.details.third.name, course_detail_path(@detail.course,@detail.course.details.third), class: "btn btn-success btn-lg" %></h5>
-
+        <h5><%= link_to @course.details.first.name, course_detail_path(@detail.course,@detail.course.details.first), class: "btn btn-secondary btn-sm btn-lg" %></h5>
+        <h5><%= link_to @course.details.second.name, course_detail_path(@detail.course,@detail.course.details.second), class: "btn btn-secondary btn-sm btn-lg" %></h5>
+        <h5><%= link_to @course.details.third.name, course_detail_path(@detail.course,@detail.course.details.third), class: "btn btn-secondary btn-sm btn-lg" %></h5>
       </div>
+
       <div class = "col-6">
-        <iframe width="560" height="400" src=<%= @detail.content %> title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe width="580" height="440" src=<%= @detail.content %> title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
       </div>
       <div class = "col-4">
         <div class="chat-container">
           <div class="chat-header">
-            <h1 class="head-detail"><i class="fab fa-slack-hash"></i> Comentarios</h1>
+            <h2 style="color: black;"><i class="fab fa-slack-hash"></i><strong> Comentarios</strong></h2>
           </div>
           <div class="chat-conversations overflow-auto">
             <% @detail.reviews.each do |review| %>
               <div class="message">
-                <img src="https://kitt.lewagon.com/placeholder/users/cveneziani" alt="">
+                <%= image_tag "avatar.png" %>
                 <div class="message-content">
                   <p><strong><%= review.user.email %></strong></p>
                   <p><%= review.content %></p>
@@ -30,7 +29,7 @@
             <div class="chat-input">
                 <%= simple_form_for [ @detail, @review ] do |f| %>
                   <%= f.input :content, label: "Comentar" %>
-                  <%= f.submit "Enviar", class: "btn btn-primary" %>
+                  <%= f.submit "Enviar", class: "btn btn-secondary btn-sm btn-lg" %>
                 <% end %>
             </div>
           </div>
@@ -39,7 +38,10 @@
     </div>
   </div>
   <div class="d-flex justify-content-end cuestionario">
+
+    <%= link_to "Cuestionario >" , detail_exams_path(@detail), class:"btn btn-primary btn-sm btn-lg"%>
+
+  <%# preguntar a midory   %>
     <%= link_to "Cuestionario" , new_exam_answer_path(@detail.exams.first), class:"btn btn-primary"%>
   </div>
 </div>
-<br>

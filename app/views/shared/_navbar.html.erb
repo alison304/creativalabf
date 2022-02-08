@@ -28,7 +28,9 @@
 
         <% else %>
           <li class="nav-item">
-            <%= link_to "Iniciar sesión", new_user_session_path, class: "btn btn-outline-primary" %>
+            <%= link_to "Iniciar sesión", new_user_session_path, class: "btn btn-secondary btn-sm bt btn-navbar" %>
+            <a href="/users/sign_up" class="btn btn-secondary btn-sm btn-navbar">Regístrate</a>
+
           </li>
         <% end %>
       </ul>
