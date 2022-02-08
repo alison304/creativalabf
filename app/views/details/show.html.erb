@@ -1,14 +1,13 @@
 <br>
 <div class="container">
-  <h2 style = "font-family: 'Nunito'; margin: 45px; font-weight: bold; "><%= @course.name %></h2>
+  <h2 style = "font-family: 'Nunito'; margin-bottom: 15px; font-weight: bold; color:gray; "><%= @course.name %></h2>
   <div class="comentario">
     <div class="row">
       <div class = "col-2">
-        <ul class = "module" style = "list-style: none">
-          <li><%= link_to @course.details.first.name, course_detail_path(@detail.course,@detail.course.details.first), class: "btn btn-success btn-large" %></li>
-          <li><%= link_to @course.details.second.name, course_detail_path(@detail.course,@detail.course.details.second), class: "btn btn-success btn-large" %></li>
-          <li><%= link_to @course.details.third.name, course_detail_path(@detail.course,@detail.course.details.third), class: "btn btn-success btn-large" %></li>
-        </ul>
+        <h5><%= link_to @course.details.first.name, course_detail_path(@detail.course,@detail.course.details.first), class: "btn btn-success btn-lg" %></h5>
+        <h5><%= link_to @course.details.second.name, course_detail_path(@detail.course,@detail.course.details.second), class: "btn btn-success btn-lg" %></h5>
+        <h5><%= link_to @course.details.third.name, course_detail_path(@detail.course,@detail.course.details.third), class: "btn btn-success btn-lg" %></h5>
+
       </div>
       <div class = "col-6">
         <iframe width="560" height="400" src=<%= @detail.content %> title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -16,7 +15,7 @@
       <div class = "col-4">
         <div class="chat-container">
           <div class="chat-header">
-            <h1><i class="fab fa-slack-hash"></i> Comentarios</h1>
+            <h1 class="head-detail"><i class="fab fa-slack-hash"></i> Comentarios</h1>
           </div>
           <div class="chat-conversations overflow-auto">
             <% @detail.reviews.each do |review| %>
@@ -30,8 +29,8 @@
             <% end %>
             <div class="chat-input">
                 <%= simple_form_for [ @detail, @review ] do |f| %>
-                  <%= f.input :content %>
-                  <%= f.submit "Submit review", class: "btn btn-primary" %>
+                  <%= f.input :content, label: "Comentar" %>
+                  <%= f.submit "Enviar", class: "btn btn-primary" %>
                 <% end %>
             </div>
           </div>
@@ -39,8 +38,8 @@
       </div>
     </div>
   </div>
-  <div class="d-flex justify-content-end cuestionario">
-
+  <div class="d-flex justify-content-between cuestionario">
+    <%= link_to "Volver" , course_details_path(@course), class:"btn btn-primary"%>
     <%= link_to "Cuestionario" , detail_exams_path(@detail), class:"btn btn-primary"%>
   </div>
 </div>
