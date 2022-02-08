@@ -17,7 +17,8 @@ class ReviewsController < ApplicationController
     @detail = Detail.find(params[:detail_id])
     @review.detail = @detail
     if @review.save
-      redirect_to reviews_path(@reviews)
+      redirect_to course_detail_path(@detail.course, @detail)
+
     else
       render :new
     end

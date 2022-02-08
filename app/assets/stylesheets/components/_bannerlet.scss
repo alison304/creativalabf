@@ -25,3 +25,9 @@
   display: flex;
   flex-direction: column;
 }
+
+.card-body{
+    margin-top: -230px;
+    height: calc(80vh - -282px);
+    padding: 334px;
+}
