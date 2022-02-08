@@ -1,0 +1,8 @@
+<div class="container">
+  <div class="exam-admi">
+    <%= simple_form_for [@exam, @answer] do |f| %>
+      <%= f.input :answer, label:"Selecciona tu respuesta", as: :radio_buttons, collection: [@exam.answerA, @exam.answerB, @exam.answerC]%>
+      <%= f.submit "Enviar", class: "btn btn-primary" %>
+    <% end %>
+  </div>
+</div>

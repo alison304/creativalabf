@@ -10,7 +10,7 @@ Rails.application.routes.draw do
   resources :exams, only: [ :edit, :update, :destroy, :index, :show ] do
     resources :answers, only: [ :new, :create ]
   end
-
+  # put "take_an_exam", to: ''
   # resources :answers, only: [ :edit, :update, :destroy, :index ]
   resources :reviews, only: [ :edit, :update, :destroy, :index ]
   resources :courses
