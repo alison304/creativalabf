@@ -98,9 +98,13 @@
 }
 .chat-container {
     flex-grow: 1;
-    padding: 16px;
+    padding: 30px;
     display: flex;
     flex-direction: column;
+    background-color: #FFCAD4;
+    position: absolute;
+    bottom: 5px;
+    left: 51px;
 }
 .chat-conversations {
     flex-grow: 1;
@@ -127,4 +131,22 @@ img {
   margin-bottom: 100px;
   margin-top: 18px;
   margin-right: 46px;
+}
+
+.btn-lg {
+  color: #ffffff;
+    background-color: #1100CB;
+    border-color: #1100CB;
+    box-shadow: black;
+}
+
+.bnt-lg:hover {
+  background-color: black;
+}
+
+.container-modulo {
+  background-color: black;
+  padding: 80px;
+  margin-left: 0px;
+  margin-right: 0px;
 }
