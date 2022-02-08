@@ -21,7 +21,8 @@
         <h1>¡Hola Usuario!</h1>
         <p>Inicia hoy aprendiendo<br> habilidades digitales para las<br> organizaciones del futuro.</p>
       </div>
-
+<br>
+<br>
       <div class="img-icons">
         <div class="card-img">
           <%= image_tag "landin.png", class:"img5" %>
@@ -44,20 +45,19 @@
   </div>
 
 <br>
-
+<br>
 <div class="boton">
   <p><strong>Cursos</strong></p>
 </div>
 
 <br>
 
-<div class="container"> 
+<div class="container">
   <div class="cards-c">
     <% @courses.each do |course| %>
       <div class="">
         <div class="cards-container">
-          <% if course.photo.key.nil?  %>
-          <% else %>
+          <% if course.photo.attached?%>
           <%= cl_image_tag course.photo.key, height: 130, width: 150, crop: :fill, styles: "object-fit: cover" %>
             <% end %>
           <div class="cards-2">
@@ -75,7 +75,7 @@
 <br>
 <br>
 
-  <div class="flex-item">
+  <div class="flex-item mb-5">
     <div class="banner-2">
       <div class="last-end">
         <p>Nuestro team siempre<br>

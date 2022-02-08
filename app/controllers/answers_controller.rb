@@ -10,11 +10,16 @@ class AnswersController < ApplicationController
 
   def new
     @answer = Answer.new
+<<<<<<< HEAD
    # @exam = Exam.find(params[:exam_id])
+=======
+    @exam = Exam.find(params[:exam_id])
+>>>>>>> master
   end
 
   def create
     @answer = Answer.new(answer_params)
+<<<<<<< HEAD
     # @answer.approved = @approved
     # @exam = Exam.find(params[:exam_id])
     if @answer.answer ==  @exam.answer_solution
@@ -22,6 +27,9 @@ class AnswersController < ApplicationController
     else
       @answer.approved = false
     end
+=======
+    @answer.approved = @approved
+>>>>>>> master
     @answer.user = current_user
     @answer.exam = @exam
     raise
