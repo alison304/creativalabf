@@ -37,7 +37,7 @@ course2 = Course.create(description: "Aprende a lanzar tu web con éxito al merc
 En Creativa diseñamos un programa de 1 mes que te entrenará para lanzar con dominio y hosting 🤯
 💻 Online en vivo.
 👩‍🏫 Tendrás el acompañamiento de expertos durante todo el programa.
-🏆 Tu aprendizaje será basado en retos y crearás webs durante el programa." , name: "Lanzamiento de una web")
+🏆 Tu aprendizaje será basado en retos y crearás webs durante el programa." , name: "Diseño UX|UI para marketers")
 course2.photo.attach(io: file2, filename: 'nes2.png', content_type: 'image2/png')
 course2.save!
 
