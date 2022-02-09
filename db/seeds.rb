@@ -65,12 +65,61 @@ detail1 = Detail.create!(name: "Moodboard y Branding", content: "https://www.you
 Detail.create!(name: "Diseño de Home principal", content: "https://www.youtube.com/embed/LRfaU7bdnPY", course: course1)
 Detail.create!(name: "Creación de CMS Blog", content: "https://www.youtube.com/embed/9cGqmcWJ2JA", course: course1)
 
+# Course1 Detail1
 Exam.create!(question: "¿Qué significa HTML?", answer_solution: "b", detail: detail1, answerA: "Lenguaje de máquina de hipertexto", answerB: "Lenguaje de marcado de hipertexto", answerC: "Lenguaje de marcas de hipertexto")
 Exam.create!(question: "¿Cómo se inicializa el tipo de documento en HTML5?", answer_solution: "c", detail: detail1, answerA: "<!DOCTYPE HTML>", answerB: "</DOCTYPE>", answerC: "</DOCTYPE html>")
 Exam.create!(question: "¿Cuál de las siguientes es la forma correcta de crear un hipervínculo en HTML?", answer_solution: "b", detail: detail1, answerA: "<a>www.geeksforgeeks.org <Geeksforgeeks /a>", answerB: "<a href=“www.geeksforgeeks.org” Geeksforgeeks /a>", answerC: "<a link=“www.geeksforgeeks.org” Geeksforgeeks> </a>")
-
 Exam.create!(question: "¿Cuál es el HTML correcto para insertar una imagen de fondo?", answer_solution: "b", detail: detail1, answerA: "<background img='background.gif'>", answerB: "<body style='background-image:url(background.gif)'>", answerC: "<body background='background.gif'>")
-Exam.create!(question: "¿Qué código es correcto para una imagen en html?", answer_solution: "c", detail: detail1, answerA: "<img src='pic_mountain.jpg'/", answerB: "</DOCTYPE>", answerC: "</DOCTYPE html>")
+#Exam.create!(question: "¿Qué código es correcto para una imagen en html?", answer_solution: "c", detail: detail1, answerA: "<img src='pic_mountain.jpg'/", answerB: "</DOCTYPE>", answerC: "</DOCTYPE html>")
+# Course1 Detail2
+Exam.create!(question: "¿Cómo se agrega un color de fondo para todos los elementos <h1>?", answer_solution: "a", detail: detail2, answerA: "h1 {background-color:#FFFFFF;}", answerB: "all.h1 {background-color:#FFFFFF;}", answerC: "h1.all {background-color:#FFFFFF;}")
+Exam.create!(question: "¿Cuál es la sintaxis CSS correcta?", answer_solution: "a", detail: detail2, answerA: "body {color:black;}", answerB: "{body;color:black;}", answerC: "body:color=black;")
+Exam.create!(question: "¿Cómo se inserta un comentario en un archivo CSS?", answer_solution: "c", detail: detail2, answerA: "//esto es un comentario//", answerB: "'esto es un comentario'", answerC: "/*esto es un comentario*/")
+Exam.create!(question: "¿Qué propiedad se utiliza para cambiar el color de fondo?", answer_solution: "a", detail: detail2, answerA: "background-color", answerB: "bgcolor", answerC: "color")
+# Course1 Detail3
+Exam.create!(question: "¿Cuál es la sintaxis de JavaScript correcta para cambiar el contenido del elemento HTML
+a continuación? <p id='demo'>Esta es una demostración.</p>", answer_solution: "a", detail: detail3, answerA: "document.getElementById('demo').innerHTML = 'Hello World!';", answerB: "document.getElementsByName('p').innerHTML = 'Hello World!';", answerC: "#demo.innerHTML = 'Hello World!';")
+Exam.create!(question: "¿Cómo se crea una función en JavaScript?", answer_solution: "a", detail: detail3, answerA: "function myFunction()", answerB: "function:myFunction()", answerC: "function = myFuntion()")
+Exam.create!(question: "¿Cómo llamas a una función llamada 'myFunction'?", answer_solution: "c", detail: detail3, answerA: "call function myFunction()", answerB: "call myFunction()", answerC: "myFunction()")
+Exam.create!(question: "¿Cuál es la forma correcta de escribir una matriz de JavaScript?", answer_solution: "b", detail: detail3, answerA: "let colors = (1:'red',2:'green',3:'blue')", answerB: "let colors = ['red','green','blue']", answerC: "let colors = 'red', 'green', 'blue'")
+
+
+# Course2 Detail1
+Exam.create!(question: "¿Qué significa HTML?", answer_solution: "b", detail: detail1, answerA: "Lenguaje de máquina de hipertexto", answerB: "Lenguaje de marcado de hipertexto", answerC: "Lenguaje de marcas de hipertexto")
+Exam.create!(question: "¿Cómo se inicializa el tipo de documento en HTML5?", answer_solution: "c", detail: detail1, answerA: "<!DOCTYPE HTML>", answerB: "</DOCTYPE>", answerC: "</DOCTYPE html>")
+Exam.create!(question: "¿Cuál de las siguientes es la forma correcta de crear un hipervínculo en HTML?", answer_solution: "b", detail: detail1, answerA: "<a>www.geeksforgeeks.org <Geeksforgeeks /a>", answerB: "<a href=“www.geeksforgeeks.org” Geeksforgeeks /a>", answerC: "<a link=“www.geeksforgeeks.org” Geeksforgeeks> </a>")
+Exam.create!(question: "¿Cuál es el HTML correcto para insertar una imagen de fondo?", answer_solution: "b", detail: detail1, answerA: "<background img='background.gif'>", answerB: "<body style='background-image:url(background.gif)'>", answerC: "<body background='background.gif'>")
+#Exam.create!(question: "¿Qué código es correcto para una imagen en html?", answer_solution: "c", detail: detail1, answerA: "<img src='pic_mountain.jpg'/", answerB: "</DOCTYPE>", answerC: "</DOCTYPE html>")
+# Course2 Detail2
+Exam.create!(question: "¿Cómo se agrega un color de fondo para todos los elementos <h1>?", answer_solution: "a", detail: detail2, answerA: "h1 {background-color:#FFFFFF;}", answerB: "all.h1 {background-color:#FFFFFF;}", answerC: "h1.all {background-color:#FFFFFF;}")
+Exam.create!(question: "¿Cuál es la sintaxis CSS correcta?", answer_solution: "a", detail: detail2, answerA: "body {color:black;}", answerB: "{body;color:black;}", answerC: "body:color=black;")
+Exam.create!(question: "¿Cómo se inserta un comentario en un archivo CSS?", answer_solution: "c", detail: detail2, answerA: "//esto es un comentario//", answerB: "'esto es un comentario'", answerC: "/*esto es un comentario*/")
+Exam.create!(question: "¿Qué propiedad se utiliza para cambiar el color de fondo?", answer_solution: "a", detail: detail2, answerA: "background-color", answerB: "bgcolor", answerC: "color")
+# Course2 Detail3
+Exam.create!(question: "¿Cuál es la sintaxis de JavaScript correcta para cambiar el contenido del elemento HTML
+a continuación? <p id='demo'>Esta es una demostración.</p>", answer_solution: "a", detail: detail3, answerA: "document.getElementById('demo').innerHTML = 'Hello World!';", answerB: "document.getElementsByName('p').innerHTML = 'Hello World!';", answerC: "#demo.innerHTML = 'Hello World!';")
+Exam.create!(question: "¿Cómo se crea una función en JavaScript?", answer_solution: "a", detail: detail3, answerA: "function myFunction()", answerB: "function:myFunction()", answerC: "function = myFuntion()")
+Exam.create!(question: "¿Cómo llamas a una función llamada 'myFunction'?", answer_solution: "c", detail: detail3, answerA: "call function myFunction()", answerB: "call myFunction()", answerC: "myFunction()")
+Exam.create!(question: "¿Cuál es la forma correcta de escribir una matriz de JavaScript?", answer_solution: "b", detail: detail3, answerA: "let colors = (1:'red',2:'green',3:'blue')", answerB: "let colors = ['red','green','blue']", answerC: "let colors = 'red', 'green', 'blue'")
+
+# Course3 Detail1
+Exam.create!(question: "¿Qué significa HTML?", answer_solution: "b", detail: detail1, answerA: "Lenguaje de máquina de hipertexto", answerB: "Lenguaje de marcado de hipertexto", answerC: "Lenguaje de marcas de hipertexto")
+Exam.create!(question: "¿Cómo se inicializa el tipo de documento en HTML5?", answer_solution: "c", detail: detail1, answerA: "<!DOCTYPE HTML>", answerB: "</DOCTYPE>", answerC: "</DOCTYPE html>")
+Exam.create!(question: "¿Cuál de las siguientes es la forma correcta de crear un hipervínculo en HTML?", answer_solution: "b", detail: detail1, answerA: "<a>www.geeksforgeeks.org <Geeksforgeeks /a>", answerB: "<a href=“www.geeksforgeeks.org” Geeksforgeeks /a>", answerC: "<a link=“www.geeksforgeeks.org” Geeksforgeeks> </a>")
+Exam.create!(question: "¿Cuál es el HTML correcto para insertar una imagen de fondo?", answer_solution: "b", detail: detail1, answerA: "<background img='background.gif'>", answerB: "<body style='background-image:url(background.gif)'>", answerC: "<body background='background.gif'>")
+#Exam.create!(question: "¿Qué código es correcto para una imagen en html?", answer_solution: "c", detail: detail1, answerA: "<img src='pic_mountain.jpg'/", answerB: "</DOCTYPE>", answerC: "</DOCTYPE html>")
+# Course3 Detail2
+Exam.create!(question: "¿Cómo se agrega un color de fondo para todos los elementos <h1>?", answer_solution: "a", detail: detail2, answerA: "h1 {background-color:#FFFFFF;}", answerB: "all.h1 {background-color:#FFFFFF;}", answerC: "h1.all {background-color:#FFFFFF;}")
+Exam.create!(question: "¿Cuál es la sintaxis CSS correcta?", answer_solution: "a", detail: detail2, answerA: "body {color:black;}", answerB: "{body;color:black;}", answerC: "body:color=black;")
+Exam.create!(question: "¿Cómo se inserta un comentario en un archivo CSS?", answer_solution: "c", detail: detail2, answerA: "//esto es un comentario//", answerB: "'esto es un comentario'", answerC: "/*esto es un comentario*/")
+Exam.create!(question: "¿Qué propiedad se utiliza para cambiar el color de fondo?", answer_solution: "a", detail: detail2, answerA: "background-color", answerB: "bgcolor", answerC: "color")
+# Course3 Detail3
+Exam.create!(question: "¿Cuál es la sintaxis de JavaScript correcta para cambiar el contenido del elemento HTML
+a continuación? <p id='demo'>Esta es una demostración.</p>", answer_solution: "a", detail: detail3, answerA: "document.getElementById('demo').innerHTML = 'Hello World!';", answerB: "document.getElementsByName('p').innerHTML = 'Hello World!';", answerC: "#demo.innerHTML = 'Hello World!';")
+Exam.create!(question: "¿Cómo se crea una función en JavaScript?", answer_solution: "a", detail: detail3, answerA: "function myFunction()", answerB: "function:myFunction()", answerC: "function = myFuntion()")
+Exam.create!(question: "¿Cómo llamas a una función llamada 'myFunction'?", answer_solution: "c", detail: detail3, answerA: "call function myFunction()", answerB: "call myFunction()", answerC: "myFunction()")
+Exam.create!(question: "¿Cuál es la forma correcta de escribir una matriz de JavaScript?", answer_solution: "b", detail: detail3, answerA: "let colors = (1:'red',2:'green',3:'blue')", answerB: "let colors = ['red','green','blue']", answerC: "let colors = 'red', 'green', 'blue'")
+
 
 Review.create(content: "Aprende", detail: detail1, user: usuario1)
 Review.create(content: "crear ", detail: detail1, user: usuario1)
