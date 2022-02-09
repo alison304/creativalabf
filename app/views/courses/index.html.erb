@@ -51,8 +51,7 @@
 <div class="container">
   <div class="cards-c">
     <% @courses.each do |course| %>
-      <div class="">
-        <div class="cards-container">
+        <div class="cards-container mb-4">
           <% if course.photo.attached?%>
           <%= cl_image_tag course.photo.key, height: 130, width: 150, crop: :fill, styles: "object-fit: cover" %>
             <% end %>
@@ -63,7 +62,6 @@
               </div>
             </div>
         </div>
-      </div>
     <% end %>
   </div>
 </div>

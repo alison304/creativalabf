@@ -19,7 +19,7 @@ User.destroy_all if Rails.env.development?
 puts "creando nuevas seeds"
 usuario1 = User.create(email:  "carolina@gmail.com", password: "Carolina123", password_confirmation: "Carolina123")
 usuario2 = User.create(email:  "paola@gmail.com", password: "Paola123", password_confirmation: "Paola123")
-usuario3 = User.create(email:  "daniel@gmail.com", password: "Daniel123", password_confirmation: "Daniel123")
+# usuario3 = User.create(email:  "daniel@gmail.com", password: "Daniel123", password_confirmation: "Daniel123")
 
 file1 = URI.open('https://media.istockphoto.com/photos/website-landing-page-development-sketch-on-math-book-picture-id842811508?b=1&k=20&m=842811508&s=170667a&w=0&h=Sxgr2DWoKex-B9MtYWqQf7kE5jAaTJ1fP5IoSPId-Cg=')
 course1 = Course.create(description: "¿Sabías que, siendo developer, diseñador, marketero, entre otros, puedes crear tu propio landing page?🤔
@@ -62,8 +62,24 @@ course4.photo.attach(io: file4, filename: 'nes4.png', content_type: 'image4/png'
 course4.save!
 
 detail1 = Detail.create!(name: "Moodboard y Branding", content: "https://www.youtube.com/embed/D-3Qg4pf-E4", course: course1)
-Detail.create!(name: "Diseño de Home principal", content: "https://www.youtube.com/embed/LRfaU7bdnPY", course: course1)
-Detail.create!(name: "Creación de CMS Blog", content: "https://www.youtube.com/embed/9cGqmcWJ2JA", course: course1)
+detail2 = Detail.create!(name: "Diseño de Home principal", content: "https://www.youtube.com/embed/LRfaU7bdnPY", course: course1)
+detail3 = Detail.create!(name: "Creación de CMS Blog", content: "https://www.youtube.com/embed/9cGqmcWJ2JA", course: course1)
+
+# agregando seeds
+
+Detail.create!(name: "UX/UI una estrategia digital", content: "https://www.youtube.com/embed/iGJyVfNyZ4E", course: course2)
+Detail.create!(name: "Creando conceptos estratégicos", content: "https://www.youtube.com/embed/rwmBe13Ytvs", course: course2)
+Detail.create!(name: "Diseñando piezas clave", content: "https://www.youtube.com/embed/STlEdjqN4dI", course: course2)
+
+Detail.create!(name: "Introducción a los negocios digitales", content: "https://www.youtube.com/embed/wll1OqGpOhY", course: course3)
+Detail.create!(name: "Herramientas de e-commerce", content: "https://www.youtube.com/embed/u3Ozeqt1CDc", course: course3)
+Detail.create!(name: "Análisis del entorno", content: "https://www.youtube.com/embed/jgqYpj0Q-cE", course: course3)
+
+Detail.create!(name: "Liderar con propósito", content: "https://www.youtube.com/embed/QiRFl0qVsLI", course: course4)
+Detail.create!(name: "Cómo mejorar la productividad", content: "https://www.youtube.com/embed/exjc4t5wz_c", course: course4)
+Detail.create!(name: "Liderargo en tiempo de cambios", content: "https://www.youtube.com/embed/5uqwAIN0Kh0", course: course4)
+
+# fin
 
 # Course1 Detail1
 Exam.create!(question: "¿Qué significa HTML?", answer_solution: "b", detail: detail1, answerA: "Lenguaje de máquina de hipertexto", answerB: "Lenguaje de marcado de hipertexto", answerC: "Lenguaje de marcas de hipertexto")
@@ -121,5 +137,5 @@ Exam.create!(question: "¿Cómo llamas a una función llamada 'myFunction'?", an
 Exam.create!(question: "¿Cuál es la forma correcta de escribir una matriz de JavaScript?", answer_solution: "b", detail: detail3, answerA: "let colors = (1:'red',2:'green',3:'blue')", answerB: "let colors = ['red','green','blue']", answerC: "let colors = 'red', 'green', 'blue'")
 
 
-Review.create(content: "Aprende", detail: detail1, user: usuario1)
-Review.create(content: "crear ", detail: detail1, user: usuario1)
+Review.create(content: "El curso está bueno:)", detail: detail1, user: usuario1)
+Review.create(content: "Pude entenderlo, gracias:)", detail: detail2, user: usuario1)
