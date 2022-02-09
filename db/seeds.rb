@@ -9,6 +9,7 @@ require "open-uri"
 
 puts "limpiando base de datos"
 
+Answer.destroy_all
 Exam.destroy_all
 Detail.destroy_all
 Course.destroy_all
