@@ -11,6 +11,7 @@
   left: 215px;
   position: absolute; */
   border-radius: 8px;
+  padding: 15px;
 }
 .cards-2{
  padding: 12px;
@@ -20,11 +21,10 @@
   font-weight: bold;
  }
 .cards-c {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-gap: 47px;
-  grid-row-gap: 2rem;
+  display: flex;
   padding: 1.5rem 0;
+  flex-wrap: wrap;
+  justify-content: space-around;
 }
 // .card-product {
 //   overflow: hidden;
@@ -117,7 +117,7 @@
 // Medium devices (tablets, 768px and up)
 @media (min-width: 768px) {
   .cards-home {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
   }
 }
 
