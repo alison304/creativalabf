@@ -106,9 +106,13 @@
 // }
 .chat-container {
     flex-grow: 1;
-    padding: 16px;
+    padding: 30px;
     display: flex;
     flex-direction: column;
+    background-color: #FFCAD4;
+    position: absolute;
+    bottom: 5px;
+    left: 51px;
 }
 .chat-conversations {
     flex-grow: 1;
@@ -136,10 +140,21 @@ img {
   margin-top: 18px;
   margin-right: 46px;
 }
-.head-detail{
-  color:#6610f2;
-  font-weight: bold;
+
+.btn-lg {
+  color: #ffffff;
+    background-color: #1100CB;
+    border-color: #1100CB;
+    box-shadow: black;
 }
-// .fab{
-//   color:#6610f2;
-// }
+
+.bnt-lg:hover {
+  background-color: black;
+}
+
+.container-modulo {
+  background-color: #1E2122;
+  padding: 80px;
+  margin-left: 0px;
+  margin-right: 0px;
+}
