@@ -29,3 +29,18 @@
 .btn-navbar {
   background-color: rgb(13, 0, 190);
 }
+
+
+.btn-navbar-creative{
+  color: #4A4A4A;
+  border: 1px solid #4A4A4A;
+  padding: 8px 24px;
+  border-radius: 50px;
+  font-weight: lighter;
+  opacity: 0.6;
+  transition: opacity 0.3s ease;
+}
+
+.btn-navbar-creative:hover {
+  opacity: 1;
+}

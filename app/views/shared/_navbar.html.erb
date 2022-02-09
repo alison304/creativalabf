@@ -12,8 +12,8 @@
       <ul class="navbar-nav me-auto">
         <% if user_signed_in? %>
           <li class="nav-item active" style="margin: 17px;">
-            <%= link_to 'Mis cursos', courses_path, class:"btn btn-dark btn-sm" %>
-            <%= link_to "Cerrar sesión", destroy_user_session_path, method: :delete, class: "btn btn-dark btn-sm" %>
+            <%= link_to 'Mis cursos', courses_path, class:"btn btn-navbar-creative btn-sm pr-3" %>
+            <%= link_to "Cerrar sesión", destroy_user_session_path, method: :delete, class: "btn btn-navbar-creative btn-sm pr-2" %>
           </li>
           <%# <li class="nav-item">
             <%= link_to 'Ver cursos', courses_path, class: "btn btn-blue" %>
