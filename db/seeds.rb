@@ -65,12 +65,12 @@ detail1 = Detail.create!(name: "Moodboard y Branding", content: "https://www.you
 Detail.create!(name: "Diseño de Home principal", content: "https://www.youtube.com/embed/LRfaU7bdnPY", course: course1)
 Detail.create!(name: "Creación de CMS Blog", content: "https://www.youtube.com/embed/9cGqmcWJ2JA", course: course1)
 
-Exam.create!(question: "¿Qué significa HTML?", answer_solution: "b", detail: detail7, answerA: "Lenguaje de máquina de hipertexto", answerB: "Lenguaje de marcado de hipertexto", answerC: "Lenguaje de marcas de hipertexto")
-Exam.create!(question: "¿Cómo se inicializa el tipo de documento en HTML5?", answer_solution: "c", detail: detail7, answerA: "<!DOCTYPE HTML>", answerB: "</DOCTYPE>", answerC: "</DOCTYPE html>")
-Exam.create!(question: "¿Cuál de las siguientes es la forma correcta de crear un hipervínculo en HTML?", answer_solution: "b", detail: detail7, answerA: "<a>www.geeksforgeeks.org <Geeksforgeeks /a>", answerB: "<a href=“www.geeksforgeeks.org” Geeksforgeeks /a>", answerC: "<a link=“www.geeksforgeeks.org” Geeksforgeeks> </a>")
+Exam.create!(question: "¿Qué significa HTML?", answer_solution: "b", detail: detail1, answerA: "Lenguaje de máquina de hipertexto", answerB: "Lenguaje de marcado de hipertexto", answerC: "Lenguaje de marcas de hipertexto")
+Exam.create!(question: "¿Cómo se inicializa el tipo de documento en HTML5?", answer_solution: "c", detail: detail1, answerA: "<!DOCTYPE HTML>", answerB: "</DOCTYPE>", answerC: "</DOCTYPE html>")
+Exam.create!(question: "¿Cuál de las siguientes es la forma correcta de crear un hipervínculo en HTML?", answer_solution: "b", detail: detail1, answerA: "<a>www.geeksforgeeks.org <Geeksforgeeks /a>", answerB: "<a href=“www.geeksforgeeks.org” Geeksforgeeks /a>", answerC: "<a link=“www.geeksforgeeks.org” Geeksforgeeks> </a>")
 
-Exam.create!(question: "¿Cuál es el HTML correcto para insertar una imagen de fondo?", answer_solution: "b", detail: detail7, answerA: "<background img='background.gif'>", answerB: "<body style='background-image:url(background.gif)'>", answerC: "<body background='background.gif'>")
-Exam.create!(question: "¿Qué código es correcto para una imagen en html?", answer_solution: "c", detail: detail7, answerA: "<img src='pic_mountain.jpg'/", answerB: "</DOCTYPE>", answerC: "</DOCTYPE html>")
+Exam.create!(question: "¿Cuál es el HTML correcto para insertar una imagen de fondo?", answer_solution: "b", detail: detail1, answerA: "<background img='background.gif'>", answerB: "<body style='background-image:url(background.gif)'>", answerC: "<body background='background.gif'>")
+Exam.create!(question: "¿Qué código es correcto para una imagen en html?", answer_solution: "c", detail: detail1, answerA: "<img src='pic_mountain.jpg'/", answerB: "</DOCTYPE>", answerC: "</DOCTYPE html>")
 
 Review.create(content: "Aprende", detail: detail1, user: usuario1)
 Review.create(content: "crear ", detail: detail1, user: usuario1)
