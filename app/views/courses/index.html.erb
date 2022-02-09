@@ -14,8 +14,8 @@
   <div class="course-banner d-flex">
     <div class="banner-1">
       <div class="index-banner">
-        <h1>¡Hola Usuario!</h1>
-        <p>Inicia hoy aprendiendo<br> habilidades digitales para las<br> organizaciones del futuro.</p>
+        <h1>¡Hola <%= current_user.name %>!</h1>
+        <p style= "font-size:20px;">Inicia hoy aprendiendo<br> habilidades digitales para las<br> organizaciones del futuro.</p>
       </div>
 <br>
 <br>
@@ -43,7 +43,7 @@
 <br>
 <br>
 <div class="boton">
-  <p><strong>Cursos</strong></p>
+  <p style= "font-size:40px;"><strong>Cursos</strong></p>
 </div>
 
 <br>
@@ -56,7 +56,7 @@
           <%= cl_image_tag course.photo.key, height: 130, width: 150, crop: :fill, styles: "object-fit: cover" %>
             <% end %>
           <div class="cards-2">
-              <h3><%= course.name %></h3>
+              <h3 style= "font-size:18px;"><%= course.name %></h3>
               <div class="mt-5">
                 <%= link_to 'Empezar', course_path(course), class: "btn btn-primary" %>
               </div>
@@ -72,11 +72,11 @@
   <div class="flex-item mb-5">
     <div class="banner-2">
       <div class="last-end">
-        <p>Nuestro team siempre<br>
+        <p style= "font-size:20px;">Nuestro team siempre<br>
         está listo para<br>
         ayudarte</p>
         <br>
-        <p>¿Estás listo para<br>
+        <p style= "font-size:20px;">¿Estás listo para<br>
         potenciar tus habilidades?</p>
       </div>
     </div>
