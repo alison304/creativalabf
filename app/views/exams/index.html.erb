@@ -1,15 +1,49 @@
 <div class="container exam-admi ">
   <div class="row">
     <div class="col-8 mx-auto">
-      <h2><%= @detail.name %></h2>
+      <h5 class="pb-3"><strong><%= @detail.name %></strong></h5>
       <% @exams.each do |exam| %>
-        <%= exam.question %>
-        <%= simple_form_for [exam, @answer] do |f| %>
-          <%= f.input :answer, label:"Selecciona tu respuesta", as: :radio_buttons, collection: [exam.answerA, exam.answerB, exam.answerB]%>
-        <% end %>
+        <div class="card-exams pb-3">
+          <p><strong><%= exam.question %></strong></p>
+          <%= simple_form_for [exam, @answer] do |f| %>
+            <%= f.input :answer, label:"Selecciona tu respuesta", as: :radio_buttons, collection: [
+              exam.answerA,
+              exam.answerB,
+              exam.answerB]%>
+          <% end %>
+        </div>
+        <div class=" card-exams pb-3">
+          <p><strong><%= exam.p2 %></strong></p>
+          <%= simple_form_for [exam, @answer] do |f| %>
+            <%= f.input :answer, label:"Selecciona tu respuesta", as: :radio_buttons, collection: [
+              exam.r21,
+              exam.r22,
+              exam.r23]%>
+          <% end %>
+        </div>
+        <div class=" card-exams pb-3">
+          <p><strong><%= exam.p3 %></strong></p>
+          <%= simple_form_for [exam, @answer] do |f| %>
+            <%= f.input :answer, label:"Selecciona tu respuesta", as: :radio_buttons, collection: [
+              exam.r31,
+              exam.r32,
+              exam.r33]%>
+          <% end %>
+        </div>
+        <div class="card-exams pb-5">
+          <p><strong><%= exam.p4 %></strong></p>
+          <%= simple_form_for [exam, @answer] do |f| %>
+            <%= f.input :answer, label:"Selecciona tu respuesta", as: :radio_buttons, collection: [
+              exam.r41,
+              exam.r42,
+              exam.r43]%>
+          <% end %>
+        </div>
+        <%= exam.answer_solution %>
       <% end %>
-      <button type="submit" class="btn btn-primary mb-2">Enviar</button>
-      <%= link_to 'Regresar', course_detail_path(@detail.course, @detail), class: "btn btn-primary mb-2" %>
+      <%= link_to 'Enviar', detail_exams_path, class: "btn btn-outline-primary p-2 m-3" %>
+      <%# <button type="submit" class="btn btn-outline-primary p-2 m-3 ">Enviar</button> %>
+      <%= link_to 'Regresar', course_detail_path(@detail.course, @detail), class: "btn btn-outline-primary p-2 m-3" %>
     </div>
   </div>
 </div>

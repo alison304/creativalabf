@@ -13,6 +13,7 @@ class ExamsController < ApplicationController
   def new
     @exam = Exam.new
     @detail = Detail.find(params[:detail_id])
+    @exams = Exam.where(detail_id: params[:detail_id])
   end
 
   def create
@@ -20,7 +21,7 @@ class ExamsController < ApplicationController
     @exam = Exam.new(exam_params)
     @exam.detail = @detail
     if @exam.save
-      redirect_to detail_exams_path(params[:detail_id])
+      redirect_to detail_exams_path
     else
       render :new
     end
@@ -45,7 +46,7 @@ class ExamsController < ApplicationController
   private
 
   def exam_params
-    params.require(:exam).permit(:question, :answer_solution, :answerA, :answerB, :answerC)
+    params.require(:exam).permit(:ru1, :ru2, :ru3, :ru4)
   end
 
   def set_exam

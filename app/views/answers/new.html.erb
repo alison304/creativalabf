@@ -1,27 +1,29 @@
-<div class="container exam-admi">
-  <div class="row">
-    <div class="col-8 mx-auto">
-      <h2 class="title-exams"><strong><%= @detail.name %></strong></h2>
-      <% @exams.each do |exam| %>
-        <div class="mt-4">
-        <p><strong><%= exam.question %></strong></p>
-        <%= simple_form_for [exam, @answer] do |f| %>
-          <div class="form-inputs p-0">
-            <%= f.input :answer, label:"Selecciona tu respuesta", as: :radio_buttons, collection: [exam.answerA,
-          exam.answerB, exam.answerC]%>
-          </div>
-          <div class="form-actions">
-            <%= f.button :submit, "Responder", :as => :hidden, class: 'btn btn-primary btn-sm flex-item mb-5'%>
-          </div>
-        <% end %>
-        </div>
-      <% end %>
-      <div class="mt-4" >
-        <%= link_to 'Enviar' , answers_path, class: "btn btn-block  btn-success mb-2" %>
-      </div>
-      <div class="mt-4">
-        <%= link_to 'Regresar' , course_detail_path(@detail.course, @detail), class: "btn btn-primary btn-sm mb-2 " %>
-      </div>
-    </div>
+<%= simple_form_for [exam, @answer] do |f| %>
+  <div class="form-inputs p-0">
+    <%= f.input :answer, label:"Selecciona tu respuesta", as: :radio_buttons, collection: [
+      exam.question,
+      exam.answer_solution,
+      exam.detail_id,
+      exam.answerA,
+      exam.answerB,
+      exam.answerC,
+      exam.p2,
+      exam.r21,
+      exam.r22,
+      exam.r23,
+      exam.r2,
+      exam.p3,
+      exam.r31,
+      exam.r32,
+      exam.r33,
+      exam.r3,
+      exam.p4,
+      exam.r41,
+      exam.r42,
+      exam.r43,
+      exam.r4]%>
   </div>
-</div>
+  <div class="form-actions">
+    <%= f.button :submit, "Responder", :as => :hidden, class: 'btn btn-primary btn-sm flex-item mb-5'%>
+  </div>
+<% end %>

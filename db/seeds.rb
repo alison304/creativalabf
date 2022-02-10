@@ -74,7 +74,6 @@ Exam.create!(question: "¿Cuál es el HTML correcto para insertar una imagen de 
 Exam.create!(question: "¿Qué código es correcto para una imagen en html?", answer_solution: "c", detail: detail1, answerA: "<img src='pic_mountain.jpg'/", answerB: "</DOCTYPE>", answerC: "</DOCTYPE html>")
 =======
 # agregando seeds
-
 Detail.create!(name: "UX/UI una estrategia digital", content: "https://www.youtube.com/embed/iGJyVfNyZ4E", course: course2)
 Detail.create!(name: "Creando conceptos estratégicos", content: "https://www.youtube.com/embed/rwmBe13Ytvs", course: course2)
 Detail.create!(name: "Diseñando piezas clave", content: "https://www.youtube.com/embed/STlEdjqN4dI", course: course2)
@@ -88,14 +87,74 @@ Detail.create!(name: "Liderar con propósito", content: "https://www.youtube.com
 Detail.create!(name: "Cómo mejorar la productividad", content: "https://www.youtube.com/embed/exjc4t5wz_c", course: course4)
 Detail.create!(name: "Liderargo en tiempo de cambios", content: "https://www.youtube.com/embed/5uqwAIN0Kh0", course: course4)
 
-# fin
-
-Exam.create!(question: "¿Qué significa HTML?", answer_solution: "b", detail: detail1, answerA: "Lenguaje de máquina de hipertexto", answerB: "Lenguaje de marcado de hipertexto", answerC: "Lenguaje de marcas de hipertexto")
-Exam.create!(question: "¿Cómo se inicializa el tipo de documento en HTML5?", answer_solution: "c", detail: detail1, answerA: "<!DOCTYPE HTML>", answerB: "</DOCTYPE>", answerC: "</DOCTYPE html>")
-Exam.create!(question: "¿Cuál de las siguientes es la forma correcta de crear un hipervínculo en HTML?", answer_solution: "b", detail: detail1, answerA: "<a>www.geeksforgeeks.org <Geeksforgeeks /a>", answerB: "<a href=“www.geeksforgeeks.org” Geeksforgeeks /a>", answerC: "<a link=“www.geeksforgeeks.org” Geeksforgeeks> </a>")
-
-Exam.create!(question: "¿Cuál es el HTML correcto para insertar una imagen de fondo?", answer_solution: "b", detail: detail1, answerA: "<background img='background.gif'>", answerB: "<body style='background-image:url(background.gif)'>", answerC: "<body background='background.gif'>")
-Exam.create!(question: "¿Qué código es correcto para una imagen en html?", answer_solution: "c", detail: detail1, answerA: "<img src='pic_mountain.jpg'/", answerB: "</DOCTYPE>", answerC: "</DOCTYPE html>")
-
 Review.create(content: "El curso está bueno:)", detail: detail1, user: usuario1)
 Review.create(content: "Pude entenderlo, gracias:)", detail: detail2, user: usuario1)
+# fin
+
+# Course1 Detail1
+Exam.create!(question: "¿Qué significa HTML?",
+            answer_solution: "b",
+            detail_id: 1,
+            answerA: "Lenguaje de máquina de hipertexto",
+            answerB: "Lenguaje de marcado de hipertexto",
+            answerC: "Lenguaje de marcas de hipertexto",
+            p2: "¿Cómo se inicializa el tipo de documento en HTML5?",
+            r21: "<!DOCTYPE HTML>",
+            r22: "</DOCTYPE>",
+            r23: "</DOCTYPE html>",
+            r2: "c",
+            p3: "¿Cuál de las siguientes es la forma correcta de crear un hipervínculo en HTML?",
+            r31: "<a>www.geeksforgeeks.org <Geeksforgeeks /a>",
+            r32: "<a href=“www.geeksforgeeks.org” Geeksforgeeks /a>",
+            r33: "<a link=“www.geeksforgeeks.org” Geeksforgeeks> </a>",
+            r3: "b",
+            p4: "¿Cuál es el HTML correcto para insertar una imagen de fondo?",
+            r41: "<background img='background.gif'>",
+            r42: "<body style='background-image:url(background.gif)'>",
+            r43: "<body background='background.gif'>",
+            r4: "b")
+
+Exam.create!(question: "fondo para todos los elementos <h1>?",
+            answer_solution: "a",
+            detail_id: 2,
+            answerA: "h1 {background-color:#FFFFFF;}",
+            answerB: "all.h1 {background-color:#FFFFFF;}",
+            answerC: "h1.all {background-color:#FFFFFF;}",
+            p2: "¿Cuál es la sintaxis CSS correcta?",
+            r21: "body {color:black;}",
+            r22: "{body;color:black;}",
+            r23: "body:color=black;",
+            r2: "a",
+            p3: "¿Cómo se inserta un comentario en un archivo CSS?",
+            r31: "//esto es un comentario//",
+            r32: "'esto es un comentario'",
+            r33: "/*esto es un comentario*/",
+            r3: "c",
+            p4: "¿Qué propiedad se utiliza para cambiar el color de fondo?",
+            r41: "background-color",
+            r42: "bgcolor",
+            r43: "color",
+            r4: "a")
+
+Exam.create!(question: "¿Cuál es la sintaxis de JavaScript correcta para cambiar el contenido del elemento HTML
+              a continuación? <p id='demo'>Esta es una demostración.</p>",
+            answer_solution: "a",
+            detail_id: 3,
+            answerA: "document.getElementById('demo').innerHTML = 'Hello World!';",
+            answerB: "document.getElementsByName('p').innerHTML = 'Hello World!';",
+            answerC: "#demo.innerHTML = 'Hello World!';",
+            p2: "¿Cómo se crea una función en JavaScript?",
+            r21: "function myFunction()",
+            r22: "function:myFunction()",
+            r23: "function = myFuntion()",
+            r2: "a",
+            p3: "¿Cómo llamas a una función llamada 'myFunction'?",
+            r31: "call function myFunction()",
+            r32: "call myFunction()",
+            r33: "myFunction()",
+            r3: "c",
+            p4: "¿Cuál es la forma correcta de escribir una matriz de JavaScript?",
+            r41: "let colors = (1:'red',2:'green',3:'blue')",
+            r42: "let colors = ['red','green','blue']",
+            r43: "let colors = 'red', 'green', 'blue'",
+            r4: "b")
