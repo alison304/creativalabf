@@ -245,7 +245,7 @@ body {
   font-family: 'Outfit', sans-serif;
 }
 
-.btn-outline-dark {
+.btn-detalles1 {
   background-color: #f8f9fa;
   border-color: #1100CB;
   border-radius: 8px;
@@ -255,9 +255,27 @@ body {
   font-family: 'Outfit', sans-serif;
   font-size: 18px;
   padding: 6px 40px;
+    left: 340px;
+    position: absolute;
+    bottom: -17px;
 }
 
-.btn-outline-dark:hover {
+.btn-detalles2 {
+  background-color: #f8f9fa;
+  border-color: #1100CB;
+  border-radius: 8px;
+  font-weight: bold;
+  border-width: medium;
+  color: #1100CB;
+  font-family: 'Outfit', sans-serif;
+  font-size: 18px;
+  padding: 6px 40px;
+  left: 570px;
+    position: absolute;
+    bottom: -17px;
+}
+
+.btn-detalles:hover {
     color: #fff;
     background-color: #1100cb;
     border-color: #f8f9fa;
