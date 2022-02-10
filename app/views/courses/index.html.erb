@@ -51,7 +51,7 @@
           <%= cl_image_tag course.photo.key, height: 160, width: 158, crop: :fill, styles: "object-fit: cover" %>
             <% end %>
           <div class="cards-2">
-              <h3 style= "font-size:22px;"><%= course.name %></h3>
+              <h3 style= "font-size:22px; font-family: 'Outfit', sans-serif;"><%= course.name %></h3>
               <div class="mt-4">
                 <%= link_to 'Empezar', course_path(course), class: "btn btn-outline-dark" %>
               </div>
