@@ -27,7 +27,7 @@ Aprende a crear tu landing page desde cero.
 En Creativa diseñamos un programa de 1 mes que te entrenará para crear tu propia web profesional en Webflow 🤯
 💻 Sesiones en vivo y grabadas.
 👩‍🏫 Tendrás el acompañamiento de expertos durante todo el programa.
-🏆 Tu aprendizaje será basado en retos y crearás webs durante el programa." , name: "Crea una Landing Page para un perfil profesional")
+🏆 Tu aprendizaje será basado en retos y crearás webs durante el programa." , name: "Landing Page para un perfil profesional")
 course1.photo.attach(io: file1, filename: 'nes1.png', content_type: 'image1/png')
 course1.save!
 
@@ -57,7 +57,7 @@ De la mano de Jose Luis Pinheira, tu profesor en este curso de Liderazgo a trav�
 En Creativa diseñamos un programa de 1 mes que te entrenará para desarrollar habilidades de liderazgo growth 🤯
 💻 Sesiones en vivo y grabadas
 👩‍🏫 Tendrás el acompañamiento de expertos durante todo el programa.
-🏆 Tu aprendizaje será basado en retos y crearás webs durante el programa." , name: "Liderazgo Digital Growth")
+🏆 Tu aprendizaje será basado en retos y crearás webs durante el programa." , name: "Liderazgo Digital Growth - founders")
 course4.photo.attach(io: file4, filename: 'nes4.png', content_type: 'image4/png')
 course4.save!
 

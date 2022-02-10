@@ -40,32 +40,27 @@
   </div>
 
 <br>
-<br>
 <div class="boton">
   <p style= "font-size:40px;"><strong>Cursos</strong></p>
 </div>
-
-<br>
 
 <div class="container">
   <div class="cards-c">
     <% @courses.each do |course| %>
         <div class="cards-container mb-4">
           <% if course.photo.attached?%>
-          <%= cl_image_tag course.photo.key, height: 130, width: 150, crop: :fill, styles: "object-fit: cover" %>
+          <%= cl_image_tag course.photo.key, height: 160, width: 158, crop: :fill, styles: "object-fit: cover" %>
             <% end %>
           <div class="cards-2">
-              <h3 style= "font-size:20px;"><%= course.name %></h3>
-              <div class="mt-5">
-                <%= link_to 'Empezar', course_path(course), class: "btn btn-primary" %>
+              <h3 style= "font-size:22px;"><%= course.name %></h3>
+              <div class="mt-4">
+                <%= link_to 'Empezar', course_path(course), class: "btn btn-outline-dark" %>
               </div>
             </div>
         </div>
     <% end %>
   </div>
 </div>
-
-<br>
 
   <div class="flex-item mb-5">
     <div class="banner-2">
