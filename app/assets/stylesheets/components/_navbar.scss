@@ -29,3 +29,20 @@
 .btn-navbar {
   background-color: rgb(13, 0, 190);
 }
+
+
+.btn-navbar {
+    background-color: #f8f9fa;
+    border-color: #1100CB;
+    border-radius: 8px;
+    font-weight: bold;
+    border-width: thin;
+    color: #1100CB;
+    font-family: 'Outfit', sans-serif;
+}
+
+.btn-navbar:hover {
+    color: #1100CB;
+    background-color: white;
+    border-color: white;
+}

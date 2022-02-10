@@ -301,3 +301,39 @@ font-family: 'Outfit', sans-serif;
 .card:hover .card__info-hover {
     opacity: 1;
 }
+
+.card__info1 {
+
+  position: relative;
+  z-index: 2;
+  border-radius: 8px;
+  padding: 16px 24px 24px 24px;
+  margin: 36px;
+  font-family: 'Outfit', sans-serif;
+}
+
+.card__info2 {
+  background-image: ('https://images.unsplash.com/photo-1580894732444-8ecded7900cd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80');
+  position: relative;
+  z-index: 2;
+  border-radius: 8px;
+  padding: 16px 24px 24px 24px;
+  margin: 36px;
+  font-family: 'Outfit', sans-serif;
+}
+
+.card__info3 {
+  background-image: ('https://images.unsplash.com/photo-1580894732444-8ecded7900cd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80');
+
+  position: relative;
+  z-index: 2;
+
+    border-radius: 8px;
+    padding: 16px 24px 24px 24px;
+    margin: 36px;
+    font-family: 'Outfit', sans-serif;
+}
+
+.card__imginfo--hover {
+  background-image: url('https://images.unsplash.com/photo-1552664862-db5607e91378?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80');
+}
