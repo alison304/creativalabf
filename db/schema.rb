@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_02_07_214024) do
+ActiveRecord::Schema.define(version: 2022_02_10_174753) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -81,6 +81,25 @@ ActiveRecord::Schema.define(version: 2022_02_07_214024) do
     t.string "answerA"
     t.string "answerB"
     t.string "answerC"
+    t.string "p2"
+    t.string "r21"
+    t.string "r22"
+    t.string "r23"
+    t.string "r2"
+    t.string "p3"
+    t.string "r31"
+    t.string "r32"
+    t.string "r33"
+    t.string "r3"
+    t.string "p4"
+    t.string "r41"
+    t.string "r42"
+    t.string "r43"
+    t.string "r4"
+    t.string "ru1"
+    t.string "ru2"
+    t.string "ru3"
+    t.string "ru4"
     t.index ["detail_id"], name: "index_exams_on_detail_id"
   end
 
@@ -111,6 +130,7 @@ ActiveRecord::Schema.define(version: 2022_02_07_214024) do
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
     t.boolean "premium", default: true
+    t.string "name"
     t.index ["email"], name: "index_users_on_email", unique: true
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end

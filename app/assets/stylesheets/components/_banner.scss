@@ -202,11 +202,6 @@ a {
   width: 90%;
 }
 
-.course-banner {
-  height: 60vh;
-  background-color: #2E5BFF;
-}
-
 .banner-1 {
   width: 50%;
   display: flex;
@@ -241,7 +236,7 @@ a {
 .boton{
   display: flex;
   justify-content: space-around;
-  color: #2E5BFF;
+  color: #1100CB;
 }
 
 
@@ -249,7 +244,26 @@ body {
   font-family: 'Outfit', sans-serif;
 }
 
-.btn-primary {
-    color: white;
-    border-radius: 8px;
+.btn-outline-dark {
+  background-color: #f8f9fa;
+  border-color: #1100CB;
+  border-radius: 8px;
+  font-weight: bold;
+  border-width: medium;
+  color: #1100CB;
+  font-family: 'Outfit', sans-serif;
+  font-size: 18px;
+  padding: 6px 40px;
+}
+
+.btn-outline-dark:hover {
+    color: #fff;
+    background-color: #1100cb;
+    border-color: #f8f9fa;
+}
+
+.btn-detalle {
+  left: 262px;
+  position: absolute;
+  padding: 6px 40px;
 }

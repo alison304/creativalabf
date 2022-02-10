@@ -1,10 +1,9 @@
-
 .cards-container{
   display: flex;
   background-color: white;
   overflow: hidden;
-  height: 172px;
-  width: 396px;
+  height: 222px;
+  width: 445px;
   box-shadow: 0 0 15px rgba(0,0,0,0.2);
   align-items: center;
   /* bottom: 209px;
@@ -13,8 +12,13 @@
   border-radius: 8px;
   padding: 15px;
 }
+
+.card-h{
+  font-size: 20px;
+}
+
 .cards-2{
- padding: 12px;
+ padding: 20px;
  margin: 0;
 }
  .cards-2 h3 {
@@ -41,8 +45,8 @@
 }
 
 .img7{
-  height: 301px;
-  width: 281px;
+  height: 378px;
+  width: 378px;
 }
 
 // @media(max-width: 50px) {
@@ -94,11 +98,49 @@
 }
 
 .course-banner {
-    height: 75vh;
-    background-color: #2E5BFF;
+    height: 52vh;
+    background-color: #1100CB;
 }
-// Cards category de home:
+// Cards category de course-banner:
 
+// Smallest device
+@media (min-width: 100px) and (max-width: 575px) {
+  .course-banner {
+    height: 20vh;
+  }
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
+  .course-banner {
+    height: 20vh;
+  }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+  .course-banner {
+    height: 20vh;
+  }
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+  .course-banner {
+    height: 52vh;
+  }
+}
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+  .course-banner {
+    height: 52vh;
+  }
+}
+
+
+
+// Cards category de home:
 
 // Smallest device
 @media (min-width: 100px) and (max-width: 575px) {

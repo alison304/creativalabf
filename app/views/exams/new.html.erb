@@ -1,13 +1,52 @@
-<div class="container">
-  <div class="exam-admi">
-    <p><%= @detail.name %></p>
-    <%= simple_form_for [@detail, @exam] do |f| %>
-        <%= f.input :question%>
-        <%= f.input :answerA%>
-        <%= f.input :answerB%>
-        <%= f.input :answerC%>
-        <%= f.input :answer_solution%>
-        <%= f.submit 'Enviar', class: 'btn btn-primary mt-2' %>
-    <% end %>
+<div class="container exam-admi">
+  <div class="row">
+    <div class="col-8 mx-auto">
+      <% @exams.each do |exam| %>
+        <div class="card-exam pb-5 ">
+          <p class="pb-1"><strong><%= exam.question %></strong><br></p>
+          a.- <%= exam.answerA %><br>
+          b.- <%= exam.answerB %><br>
+          c.- <%= exam.answerC %><br>
+          <%= simple_form_for [@exam] do |f| %>
+            <%= f.input :answer_solution, label: "", prompt: "Selecciona tu respuesta", collection: [
+              'a', 'b', 'c']%>
+          <%# end %>
+        </div>
+        <div class="card-exam pb-5">
+          <p class="pb-1"><strong><%= exam.p2 %></strong><br></p>
+          a.- <%= exam.r21 %><br>
+          b.- <%= exam.r22 %><br>
+          c.- <%= exam.r23 %><br>
+          <%#= simple_form_for [@exam] do |f| %>
+            <%= f.input :r2, prompt: "Selecciona tu respuesta", collection: [
+              'a', 'b', 'c']%>
+          <%# end %>
+        </div>
+        <div class="card-exam pb-5">
+          <p class="pb-1"><strong><%= exam.p3 %></strong><br></p>
+          a.- <%= exam.r31 %><br>
+          b.- <%= exam.r32 %><br>
+          c.- <%= exam.r33 %><br>
+          <%#= simple_form_for [@exam] do |f| %>
+            <%= f.input :r3, prompt: "Selecciona tu respuesta", collection: [
+              'a', 'b', 'c']%>
+          <%# end %>
+        </div>
+        <div class="card-exam pb-5">
+          <p class="pb-1"><strong><%= exam.p4 %></strong><br></p>
+          a.- <%= exam.r41 %><br>
+          b.- <%= exam.r42 %><br>
+          c.- <%= exam.r43 %><br>
+          <%#= simple_form_for [@exam] do |f| %>
+            <%= f.input :r4, prompt: "Selecciona tu respuesta", collection: [
+              'a', 'b', 'c']%>
+          <%# end %>
+        </div>
+        <%= f.submit %>
+        <% end %>
+      <% end %>
+      <%# <button type="submit" class="btn btn-outline-primary p-2 m-3 ">Enviar</button> %>
+      <%= link_to 'Regresar', course_detail_path(@detail.course, @detail), class: "btn btn-outline-primary p-2 m-3" %>
+    </div>
   </div>
 </div>
