@@ -10,7 +10,6 @@
   bottom: 209px;
   left: 276px;
 
-
   &--left {
     width: 60%;
     height: 100%;
@@ -67,6 +66,9 @@ h2, p {
     left: 215px;
     border-radius: 10px;
 }
+.img1:hover {
+  box-shadow: 0px 2px 7px 0px;
+}
 
 
 .img2 {
@@ -77,6 +79,9 @@ h2, p {
     left: 35px;
     border-radius: 10px;
 }
+.img2:hover {
+  box-shadow: 0px 0px 5px 0px;
+}
 
 .img3 {
     position: absolute;
@@ -86,13 +91,16 @@ h2, p {
     left: -10px;
     border-radius: 10px;
 }
+.img3:hover {
+  box-shadow: 0px 0px 5px 0px;
+}
 
 .img-womans {
     position: absolute;
     width: 580px;
     height: 580px;
-    bottom: -1011px;
-    left: 736px;
+    bottom: -1348px;
+    left: 702px;
     padding: 72px;
 }
 
@@ -147,15 +155,15 @@ a {
 }
 
 .home-info1  {
-  background-color: #000000;
+  background-image: ('https://images.unsplash.com/photo-1580894732444-8ecded7900cd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80');
   background-size: cover;
   width: 100%;
   text-align: center;
-  height: 400px;
+  height: 700px;
 }
 
 .home-info2 {
-  background-color: #000000;
+  background-color: #111111ee;
   background-size: cover;
   width: 100%;
   text-align: center;
@@ -163,11 +171,11 @@ a {
 }
 
 .home-info3 {
-  background-color: #345cfa;
+  background-color: #ffffffe5;
 }
 
 .home-info4 {
-  background-color: #ffffff;
+  background-color: #ffffffe5;
   height: 400px;
 }
 
@@ -228,7 +236,7 @@ a {
 .boton{
   display: flex;
   justify-content: space-around;
-  color: #2E5BFF;
+  color: #1100CB;
 }
 
 
@@ -236,7 +244,26 @@ body {
   font-family: 'Outfit', sans-serif;
 }
 
-.btn-primary {
-    color: white;
-    border-radius: 8px;
+.btn-outline-dark {
+  background-color: #f8f9fa;
+  border-color: #1100CB;
+  border-radius: 8px;
+  font-weight: bold;
+  border-width: medium;
+  color: #1100CB;
+  font-family: 'Outfit', sans-serif;
+  font-size: 18px;
+  padding: 6px 40px;
+}
+
+.btn-outline-dark:hover {
+    color: #fff;
+    background-color: #1100cb;
+    border-color: #f8f9fa;
+}
+
+.btn-detalle {
+  left: 262px;
+  position: absolute;
+  padding: 6px 40px;
 }

@@ -28,7 +28,7 @@ Aprende a crear tu landing page desde cero.
 En Creativa diseñamos un programa de 1 mes que te entrenará para crear tu propia web profesional en Webflow 🤯
 💻 Sesiones en vivo y grabadas.
 👩‍🏫 Tendrás el acompañamiento de expertos durante todo el programa.
-🏆 Tu aprendizaje será basado en retos y crearás webs durante el programa." , name: "Crea una Landing Page para un perfil profesional")
+🏆 Tu aprendizaje será basado en retos y crearás webs durante el programa." , name: "Landing Page para un perfil profesional")
 course1.photo.attach(io: file1, filename: 'nes1.png', content_type: 'image1/png')
 course1.save!
 
@@ -58,7 +58,7 @@ De la mano de Jose Luis Pinheira, tu profesor en este curso de Liderazgo a trav�
 En Creativa diseñamos un programa de 1 mes que te entrenará para desarrollar habilidades de liderazgo growth 🤯
 💻 Sesiones en vivo y grabadas
 👩‍🏫 Tendrás el acompañamiento de expertos durante todo el programa.
-🏆 Tu aprendizaje será basado en retos y crearás webs durante el programa." , name: "Liderazgo Digital Growth")
+🏆 Tu aprendizaje será basado en retos y crearás webs durante el programa." , name: "Liderazgo Digital Growth - founders")
 course4.photo.attach(io: file4, filename: 'nes4.png', content_type: 'image4/png')
 course4.save!
 
@@ -66,7 +66,6 @@ detail1 = Detail.create!(name: "Moodboard y Branding", content: "https://www.you
 detail2 = Detail.create!(name: "Diseño de Home principal", content: "https://www.youtube.com/embed/LRfaU7bdnPY", video_url: "https://images.unsplash.com/photo-1455894127589-22f75500213a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=787&q=80", course: course1)
 detail3 = Detail.create!(name: "Creación de CMS Blog", content: "https://www.youtube.com/embed/9cGqmcWJ2JA", video_url:"https://images.unsplash.com/photo-1432821579285-1b649e5b1ce3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80", course: course1)
 
-# agregando seeds
 
 detail4 = Detail.create!(name: "UX/UI una estrategia digital", content: "https://www.youtube.com/embed/iGJyVfNyZ4E", video_url: "https://media.istockphoto.com/photos/shot-of-an-attractive-young-businesswoman-standing-and-looking-while-picture-id1357880802?k=20&m=1357880802&s=612x612&w=0&h=UDju6XgwWrNEzOQYU5BO2Z4xHE-uUBagbDcHFz0eqLg=", course: course2)
 detail5 = Detail.create!(name: "Creando conceptos estratégicos", content: "https://www.youtube.com/embed/rwmBe13Ytvs", video_url: "https://media.istockphoto.com/photos/woman-hand-holding-illuminated-light-bulb-brand-idea-concept-picture-id1047716020?k=20&m=1047716020&s=612x612&w=0&h=l1wPbflr6imP1CEwpft_SmGx7aM6r4fwBldupstbPRw=", course: course2)
@@ -80,16 +79,8 @@ detail10 = Detail.create!(name: "Liderar con propósito", content: "https://www.
 detail11 = Detail.create!(name: "Cómo mejorar la productividad", content: "https://www.youtube.com/embed/exjc4t5wz_c", video_url: "https://images.unsplash.com/photo-1516321497487-e288fb19713f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80", course: course4)
 detail12 = Detail.create!(name: "Liderazgo en tiempo de cambios", content: "https://www.youtube.com/embed/5uqwAIN0Kh0", video_url: "https://media.istockphoto.com/photos/designer-using-a-phone-picture-id928149980?k=20&m=928149980&s=612x612&w=0&h=NPFVz60mafY10fxhSxGMGrG4cmOXD1hfAbOGNsT0Upo=", course: course4)
 
-# fin
-
-Exam.create!(question: "¿Qué significa HTML?", answer_solution: "b", detail: detail1, answerA: "Lenguaje de máquina de hipertexto", answerB: "Lenguaje de marcado de hipertexto", answerC: "Lenguaje de marcas de hipertexto")
-Exam.create!(question: "¿Cómo se inicializa el tipo de documento en HTML5?", answer_solution: "c", detail: detail1, answerA: "<!DOCTYPE HTML>", answerB: "</DOCTYPE>", answerC: "</DOCTYPE html>")
-Exam.create!(question: "¿Cuál de las siguientes es la forma correcta de crear un hipervínculo en HTML?", answer_solution: "b", detail: detail1, answerA: "<a>www.geeksforgeeks.org <Geeksforgeeks /a>", answerB: "<a href=“www.geeksforgeeks.org” Geeksforgeeks /a>", answerC: "<a link=“www.geeksforgeeks.org” Geeksforgeeks> </a>")
-
-Exam.create!(question: "¿Cuál es el HTML correcto para insertar una imagen de fondo?", answer_solution: "b", detail: detail1, answerA: "<background img='background.gif'>", answerB: "<body style='background-image:url(background.gif)'>", answerC: "<body background='background.gif'>")
-Exam.create!(question: "¿Qué código es correcto para una imagen en html?", answer_solution: "c", detail: detail1, answerA: "<img src='pic_mountain.jpg'/", answerB: "</DOCTYPE>", answerC: "</DOCTYPE html>")
-
 Review.create(content: "El curso está bueno:)", detail: detail1, user: usuario1)
+
 Review.create(content: "Pude entenderlo, gracias:)", detail: detail1, user: usuario2)
 
 Review.create(content: "Me parreció super la clase!", detail: detail2, user: usuario3)
@@ -119,3 +110,74 @@ Review.create(content: "Sí, y hay que ser muy competente para serlo!", detail: 
 
 Review.create(content: "Sí, hay que ser fuerte, en los tiempos difíles", detail: detail12, user: usuario1)
 Review.create(content: "La actitud es muy importante", detail: detail12, user: usuario2)
+
+# fin
+
+# Course1 Detail1
+Exam.create!(question: "¿Qué significa HTML?",
+            answer_solution: "b",
+            detail_id: 1,
+            answerA: "Lenguaje de máquina de hipertexto",
+            answerB: "Lenguaje de marcado de hipertexto",
+            answerC: "Lenguaje de marcas de hipertexto",
+            p2: "¿Cómo se inicializa el tipo de documento en HTML5?",
+            r21: "<!DOCTYPE HTML>",
+            r22: "</DOCTYPE>",
+            r23: "</DOCTYPE html>",
+            r2: "c",
+            p3: "¿Cuál de las siguientes es la forma correcta de crear un hipervínculo en HTML?",
+            r31: "<a>www.geeksforgeeks.org <Geeksforgeeks /a>",
+            r32: "<a href=“www.geeksforgeeks.org” Geeksforgeeks /a>",
+            r33: "<a link=“www.geeksforgeeks.org” Geeksforgeeks> </a>",
+            r3: "b",
+            p4: "¿Cuál es el HTML correcto para insertar una imagen de fondo?",
+            r41: "<background img='background.gif'>",
+            r42: "<body style='background-image:url(background.gif)'>",
+            r43: "<body background='background.gif'>",
+            r4: "b")
+
+Exam.create!(question: "fondo para todos los elementos <h1>?",
+            answer_solution: "a",
+            detail_id: 2,
+            answerA: "h1 {background-color:#FFFFFF;}",
+            answerB: "all.h1 {background-color:#FFFFFF;}",
+            answerC: "h1.all {background-color:#FFFFFF;}",
+            p2: "¿Cuál es la sintaxis CSS correcta?",
+            r21: "body {color:black;}",
+            r22: "{body;color:black;}",
+            r23: "body:color=black;",
+            r2: "a",
+            p3: "¿Cómo se inserta un comentario en un archivo CSS?",
+            r31: "//esto es un comentario//",
+            r32: "'esto es un comentario'",
+            r33: "/*esto es un comentario*/",
+            r3: "c",
+            p4: "¿Qué propiedad se utiliza para cambiar el color de fondo?",
+            r41: "background-color",
+            r42: "bgcolor",
+            r43: "color",
+            r4: "a")
+
+Exam.create!(question: "¿Cuál es la sintaxis de JavaScript correcta para cambiar el contenido del elemento HTML
+              a continuación? <p id='demo'>Esta es una demostración.</p>",
+            answer_solution: "a",
+            detail_id: 3,
+            answerA: "document.getElementById('demo').innerHTML = 'Hello World!';",
+            answerB: "document.getElementsByName('p').innerHTML = 'Hello World!';",
+            answerC: "#demo.innerHTML = 'Hello World!';",
+            p2: "¿Cómo se crea una función en JavaScript?",
+            r21: "function myFunction()",
+            r22: "function:myFunction()",
+            r23: "function = myFuntion()",
+            r2: "a",
+            p3: "¿Cómo llamas a una función llamada 'myFunction'?",
+            r31: "call function myFunction()",
+            r32: "call myFunction()",
+            r33: "myFunction()",
+            r3: "c",
+            p4: "¿Cuál es la forma correcta de escribir una matriz de JavaScript?",
+            r41: "let colors = (1:'red',2:'green',3:'blue')",
+            r42: "let colors = ['red','green','blue']",
+            r43: "let colors = 'red', 'green', 'blue'",
+            r4: "b")
+

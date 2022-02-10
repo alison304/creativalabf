@@ -3,21 +3,21 @@
 <div class="courses-show">
   <div class="row">
       <div class="col-8">
-        <h1><%= @course.name %></h1>
-        <p class="">Descripcion :<%= @course.description %></p>
+        <h1 style="font-size: 3.1rem;"><%= @course.name %></h1>
+        <br>
+        <p class="card-h" style="margin-bottom: 2.5rem">Descripción: <%= @course.description %></p>
         <p></p>
       </div>
 
       <div class="col-4">
           <%= cl_image_tag @course.photo.key, width: "300" %>
-
       </div>
     </div>
 
       <div class="container">
-        <%= link_to 'Ver módulos', course_details_path(@course), class: "btn btn-primary" %>
+        <%= link_to 'Ver módulos', course_details_path(@course), class: "btn btn-outline-dark" %>
         <!-- <%= link_to 'Nuevo curso', new_course_path(@course), class: "btn btn-primary" %> -->
-        <%= link_to 'Volver', courses_path, class: "btn btn-primary" %>
+        <%= link_to 'Volver', courses_path, class: "btn btn-outline-dark btn-detalle" %>
       </div>
 </div>
 
