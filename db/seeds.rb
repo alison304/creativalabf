@@ -66,10 +66,24 @@ detail1 = Detail.create!(name: "Moodboard y Branding", content: "https://www.you
 detail2 = Detail.create!(name: "Diseño de Home principal", content: "https://www.youtube.com/embed/LRfaU7bdnPY", video_url: "https://images.unsplash.com/photo-1455894127589-22f75500213a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=787&q=80", course: course1)
 detail3 = Detail.create!(name: "Creación de CMS Blog", content: "https://www.youtube.com/embed/9cGqmcWJ2JA", video_url:"https://images.unsplash.com/photo-1432821579285-1b649e5b1ce3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80", course: course1)
 
+<<<<<<< HEAD
+# Exam.create!(question: "¿Qué significa HTML?", answer_solution: "b", detail: detail1, answerA: "Lenguaje de máquina de hipertexto", answerB: "Lenguaje de marcado de hipertexto", answerC: "Lenguaje de marcas de hipertexto")
+# Exam.create!(question: "¿Cómo se inicializa el tipo de documento en HTML5?", answer_solution: "c", detail: detail1, answerA: "<!DOCTYPE HTML>", answerB: "</DOCTYPE>", answerC: "</DOCTYPE html>")
+# Exam.create!(question: "¿Cuál de las siguientes es la forma correcta de crear un hipervínculo en HTML?", answer_solution: "b", detail: detail1, answerA: "<a>www.geeksforgeeks.org <Geeksforgeeks /a>", answerB: "<a href=“www.geeksforgeeks.org” Geeksforgeeks /a>", answerC: "<a link=“www.geeksforgeeks.org” Geeksforgeeks> </a>")
+
+# Exam.create!(question: "¿Cuál es el HTML correcto para insertar una imagen de fondo?", answer_solution: "b", detail: detail1, answerA: "<background img='background.gif'>", answerB: "<body style='background-image:url(background.gif)'>", answerC: "<body background='background.gif'>")
+# Exam.create!(question: "¿Qué código es correcto para una imagen en html?", answer_solution: "c", detail: detail1, answerA: "<img src='pic_mountain.jpg'/", answerB: "</DOCTYPE>", answerC: "</DOCTYPE html>")
+# # agregando seeds
+
+Detail.create!(name: "UX/UI una estrategia digital", content: "https://www.youtube.com/embed/iGJyVfNyZ4E", course: course2)
+Detail.create!(name: "Creando conceptos estratégicos", content: "https://www.youtube.com/embed/rwmBe13Ytvs", course: course2)
+Detail.create!(name: "Diseñando piezas clave", content: "https://www.youtube.com/embed/STlEdjqN4dI", course: course2)
+=======
 
 detail4 = Detail.create!(name: "UX/UI una estrategia digital", content: "https://www.youtube.com/embed/iGJyVfNyZ4E", video_url: "https://media.istockphoto.com/photos/shot-of-an-attractive-young-businesswoman-standing-and-looking-while-picture-id1357880802?k=20&m=1357880802&s=612x612&w=0&h=UDju6XgwWrNEzOQYU5BO2Z4xHE-uUBagbDcHFz0eqLg=", course: course2)
 detail5 = Detail.create!(name: "Creando conceptos estratégicos", content: "https://www.youtube.com/embed/rwmBe13Ytvs", video_url: "https://media.istockphoto.com/photos/woman-hand-holding-illuminated-light-bulb-brand-idea-concept-picture-id1047716020?k=20&m=1047716020&s=612x612&w=0&h=l1wPbflr6imP1CEwpft_SmGx7aM6r4fwBldupstbPRw=", course: course2)
 detail6 = Detail.create!(name: "Diseñando piezas clave", content: "https://www.youtube.com/embed/STlEdjqN4dI", video_url: "https://images.unsplash.com/photo-1506097425191-7ad538b29cef?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80", course: course2)
+>>>>>>> master
 
 detail7 = Detail.create!(name: "Introducción a los negocios digitales", content: "https://www.youtube.com/embed/wll1OqGpOhY", video_url: "https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80", course: course3)
 detail8 = Detail.create!(name: "Herramientas de e-commerce", content: "https://www.youtube.com/embed/u3Ozeqt1CDc", video_url: "https://media.istockphoto.com/photos/online-shopping-and-digital-marketing-concept-woman-using-digital-picture-id1250152532?k=20&m=1250152532&s=612x612&w=0&h=HhdQoO5M8uRL7CpRrtcHZHSQ4cIsfa2TG3s0LgkflAA=", course: course3)
