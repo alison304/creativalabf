@@ -1,11 +1,11 @@
 <div class="container-modulo">
-  <h2 style = "font-weight: bold; margin-bottom: 30px; "><%= @course.name %></h2>
+  <h2 style = "color: black; margin-bottom: 30px; "><%= @course.name %></h2>
   <div class="comentario">
     <div class="row">
       <div class = "col-2">
-        <h5><%= link_to @course.details.first.name, course_detail_path(@detail.course,@detail.course.details.first), class: "btn btn-secondary btn-sm btn-lg" %></h5>
-        <h5><%= link_to @course.details.second.name, course_detail_path(@detail.course,@detail.course.details.second), class: "btn btn-secondary btn-sm btn-lg" %></h5>
-        <h5><%= link_to @course.details.third.name, course_detail_path(@detail.course,@detail.course.details.third), class: "btn btn-secondary btn-sm btn-lg" %></h5>
+        <h5><%= link_to @course.details.first.name, course_detail_path(@detail.course,@detail.course.details.first), class: "btn btn-outline-dark " %></h5>
+        <h5><%= link_to @course.details.second.name, course_detail_path(@detail.course,@detail.course.details.second), class: "btn btn-outline-dark " %></h5>
+        <h5><%= link_to @course.details.third.name, course_detail_path(@detail.course,@detail.course.details.third), class: "btn btn-outline-dark " %></h5>
       </div>
 
       <div class = "col-6">
@@ -19,7 +19,7 @@
           <div class="chat-conversations overflow-auto">
             <% @detail.reviews.each do |review| %>
               <div class="message">
-                <%= image_tag "avatar.png" %>
+                <img src="https://media.istockphoto.com/illustrations/email-icon-special-blue-square-button-illustration-id827639136?k=20&m=827639136&s=612x612&w=0&h=aMH7VAx9e7f3PmhdrYJ-8Kyt9QLFsurtcGHPJJz2uek=" alt="">
                 <div class="message-content">
                   <p><strong><%= review.user.email %></strong></p>
                   <p><%= review.content %></p>
@@ -37,7 +37,7 @@
       </div>
     </div>
   </div>
-  <div class="d-flex justify-content-between cuestionario">
+  <div style = "margin-top: 50px;", class="d-flex justify-content-between cuestionario">
     <%= link_to "Volver" , course_details_path(@course), class:"btn btn-primary"%>
     <%= link_to "Cuestionario" , detail_exams_path(@detail), class:"btn btn-primary"%>
     <%# <%= link_to "Cuestionario" , new_exam_answer_path(@detail.exams.first), class:"btn btn-primary"%>
