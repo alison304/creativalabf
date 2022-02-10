@@ -8,6 +8,11 @@
       <%= simple_form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
         <div class="form-inputs">
             <i class="fas fa-envelope icon"></i>
+          <%= f.input :name,
+                      label: "Nombre",
+                      required: false,
+                      autofocus: true,
+                      input_html: { autocomplete: "name" } %>
             <%= f.input :email,
                         label: "Correo",
                         required: false,
