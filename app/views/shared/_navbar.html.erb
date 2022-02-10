@@ -12,8 +12,10 @@
       <ul class="navbar-nav me-auto">
         <% if user_signed_in? %>
           <li class="nav-item active" style="margin: 17px;">
-            <%= link_to 'Mis cursos', courses_path, class:"btn btn-dark btn-sm" %>
-            <%= link_to "Cerrar sesión", destroy_user_session_path, method: :delete, class: "btn btn-dark btn-sm" %>
+            <%= link_to 'Podcast', root_path, class:"btn btn-outline-dark btn-navbar3 btn-sm" %>
+            <%= link_to 'Mis cursos', courses_path, class:"btn btn-outline-dark btn-navbar1 btn-sm" %>
+            <%= link_to "Cerrar sesión", destroy_user_session_path, method: :delete, class: "btn btn-outline-dark btn-navbar2 btn-sm" %>
+
           </li>
           <%# <li class="nav-item">
             <%= link_to 'Ver cursos', courses_path, class: "btn btn-blue" %>
@@ -28,8 +30,8 @@
 
         <% else %>
           <li class="nav-item">
-            <%= link_to "Iniciar sesión", new_user_session_path, class: "btn btn-secondary btn-sm bt btn-navbar" %>
-            <a href="/users/sign_up" class="btn btn-secondary btn-sm btn-navbar">Regístrate</a>
+            <%= link_to "Iniciar sesión", new_user_session_path, class: "btn btn-outline-dark btn-navbar btn-sm" %>
+            <a href="/users/sign_up" class="btn btn-outline-dark btn-navbar btn-sm">Regístrate</a>
 
           </li>
         <% end %>
