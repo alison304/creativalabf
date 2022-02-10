@@ -65,19 +65,16 @@ detail1 = Detail.create!(name: "Moodboard y Branding", content: "https://www.you
 detail2 = Detail.create!(name: "Diseño de Home principal", content: "https://www.youtube.com/embed/LRfaU7bdnPY", course: course1)
 detail3 = Detail.create!(name: "Creación de CMS Blog", content: "https://www.youtube.com/embed/9cGqmcWJ2JA", course: course1)
 
-<<<<<<< HEAD
-Exam.create!(question: "¿Qué significa HTML?", answer_solution: "b", detail: detail1, answerA: "Lenguaje de máquina de hipertexto", answerB: "Lenguaje de marcado de hipertexto", answerC: "Lenguaje de marcas de hipertexto")
-Exam.create!(question: "¿Cómo se inicializa el tipo de documento en HTML5?", answer_solution: "c", detail: detail1, answerA: "<!DOCTYPE HTML>", answerB: "</DOCTYPE>", answerC: "</DOCTYPE html>")
-Exam.create!(question: "¿Cuál de las siguientes es la forma correcta de crear un hipervínculo en HTML?", answer_solution: "b", detail: detail1, answerA: "<a>www.geeksforgeeks.org <Geeksforgeeks /a>", answerB: "<a href=“www.geeksforgeeks.org” Geeksforgeeks /a>", answerC: "<a link=“www.geeksforgeeks.org” Geeksforgeeks> </a>")
+# Exam.create!(question: "¿Qué significa HTML?", answer_solution: "b", detail: detail1, answerA: "Lenguaje de máquina de hipertexto", answerB: "Lenguaje de marcado de hipertexto", answerC: "Lenguaje de marcas de hipertexto")
+# Exam.create!(question: "¿Cómo se inicializa el tipo de documento en HTML5?", answer_solution: "c", detail: detail1, answerA: "<!DOCTYPE HTML>", answerB: "</DOCTYPE>", answerC: "</DOCTYPE html>")
+# Exam.create!(question: "¿Cuál de las siguientes es la forma correcta de crear un hipervínculo en HTML?", answer_solution: "b", detail: detail1, answerA: "<a>www.geeksforgeeks.org <Geeksforgeeks /a>", answerB: "<a href=“www.geeksforgeeks.org” Geeksforgeeks /a>", answerC: "<a link=“www.geeksforgeeks.org” Geeksforgeeks> </a>")
 
-Exam.create!(question: "¿Cuál es el HTML correcto para insertar una imagen de fondo?", answer_solution: "b", detail: detail1, answerA: "<background img='background.gif'>", answerB: "<body style='background-image:url(background.gif)'>", answerC: "<body background='background.gif'>")
-Exam.create!(question: "¿Qué código es correcto para una imagen en html?", answer_solution: "c", detail: detail1, answerA: "<img src='pic_mountain.jpg'/", answerB: "</DOCTYPE>", answerC: "</DOCTYPE html>")
-=======
-# agregando seeds
+# Exam.create!(question: "¿Cuál es el HTML correcto para insertar una imagen de fondo?", answer_solution: "b", detail: detail1, answerA: "<background img='background.gif'>", answerB: "<body style='background-image:url(background.gif)'>", answerC: "<body background='background.gif'>")
+# Exam.create!(question: "¿Qué código es correcto para una imagen en html?", answer_solution: "c", detail: detail1, answerA: "<img src='pic_mountain.jpg'/", answerB: "</DOCTYPE>", answerC: "</DOCTYPE html>")
+# # agregando seeds
 Detail.create!(name: "UX/UI una estrategia digital", content: "https://www.youtube.com/embed/iGJyVfNyZ4E", course: course2)
 Detail.create!(name: "Creando conceptos estratégicos", content: "https://www.youtube.com/embed/rwmBe13Ytvs", course: course2)
 Detail.create!(name: "Diseñando piezas clave", content: "https://www.youtube.com/embed/STlEdjqN4dI", course: course2)
->>>>>>> b16cff3d97d6e8574f886571900cb8216bd33bb5
 
 Detail.create!(name: "Introducción a los negocios digitales", content: "https://www.youtube.com/embed/wll1OqGpOhY", course: course3)
 Detail.create!(name: "Herramientas de e-commerce", content: "https://www.youtube.com/embed/u3Ozeqt1CDc", course: course3)
