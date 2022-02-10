@@ -62,7 +62,7 @@ En Creativa diseñamos un programa de 1 mes que te entrenará para desarrollar h
 course4.photo.attach(io: file4, filename: 'nes4.png', content_type: 'image4/png')
 course4.save!
 
-detail1 = Detail.create!(name: "Moodboard y Branding", content: "https://media.istockphoto.com/photos/young-designer-using-a-digital-tablet-at-the-studio-picture-id1266858235?k=20&m=1266858235&s=612x612&w=0&h=IyM3dvwiBMpai6B-hyjGBt_t_EEWLCo_FXcaAnxE_Zo=", course: course1)
+detail1 = Detail.create!(name: "Moodboard y Branding", content: "https://www.youtube.com/embed/D-3Qg4pf-E4", video_url: "https://images.unsplash.com/photo-1416339134316-0e91dc9ded92?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80", course: course1)
 detail2 = Detail.create!(name: "Diseño de Home principal", content: "https://www.youtube.com/embed/LRfaU7bdnPY", video_url: "https://images.unsplash.com/photo-1455894127589-22f75500213a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=787&q=80", course: course1)
 detail3 = Detail.create!(name: "Creación de CMS Blog", content: "https://www.youtube.com/embed/9cGqmcWJ2JA", video_url:"https://images.unsplash.com/photo-1432821579285-1b649e5b1ce3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80", course: course1)
 
@@ -76,7 +76,7 @@ detail7 = Detail.create!(name: "Introducción a los negocios digitales", content
 detail8 = Detail.create!(name: "Herramientas de e-commerce", content: "https://www.youtube.com/embed/u3Ozeqt1CDc", video_url: "https://media.istockphoto.com/photos/online-shopping-and-digital-marketing-concept-woman-using-digital-picture-id1250152532?k=20&m=1250152532&s=612x612&w=0&h=HhdQoO5M8uRL7CpRrtcHZHSQ4cIsfa2TG3s0LgkflAA=", course: course3)
 detail9 = Detail.create!(name: "Análisis del entorno", content: "https://www.youtube.com/embed/jgqYpj0Q-cE",video_url: "https://media.istockphoto.com/photos/network-of-business-concept-picture-id1127447341?k=20&m=1127447341&s=612x612&w=0&h=aHVYNQvlSCIiljOqzVmkC8MtL-0xCsPINbEkThCgSBo=", course: course3)
 
-detail10 = Detail.create!(name: "Liderar con propósito", content: "https://media.istockphoto.com/photos/group-of-businesswomen-collaborating-in-creative-meeting-around-table-picture-id1279113943?k=20&m=1279113943&s=612x612&w=0&h=-4qUq7x5tO_ubIOgzD45Na4lFoc7po_29Fc523QQJdw=", course: course4)
+detail10 = Detail.create!(name: "Liderar con propósito", content: "https://www.youtube.com/embed/QiRFl0qVsLI", video_url: "https://images.unsplash.com/photo-1488190211105-8b0e65b80b4e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80", course: course4)
 detail11 = Detail.create!(name: "Cómo mejorar la productividad", content: "https://www.youtube.com/embed/exjc4t5wz_c", video_url: "https://images.unsplash.com/photo-1516321497487-e288fb19713f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80", course: course4)
 detail12 = Detail.create!(name: "Liderazgo en tiempo de cambios", content: "https://www.youtube.com/embed/5uqwAIN0Kh0", video_url: "https://media.istockphoto.com/photos/designer-using-a-phone-picture-id928149980?k=20&m=928149980&s=612x612&w=0&h=NPFVz60mafY10fxhSxGMGrG4cmOXD1hfAbOGNsT0Upo=", course: course4)
 
@@ -92,30 +92,30 @@ Exam.create!(question: "¿Qué código es correcto para una imagen en html?", an
 Review.create(content: "El curso está bueno:)", detail: detail1, user: usuario1)
 Review.create(content: "Pude entenderlo, gracias:)", detail: detail1, user: usuario2)
 
-Review.create(content: "El curso está bueno:)", detail: detail2, user: usuario3)
-Review.create(content: "Pude entenderlo, gracias:)", detail: detail2, user: usuario4)
-Review.create(content: "El curso está bueno:)", detail: detail3, user: usuario1)
-Review.create(content: "Se logró entender, gracias:)", detail: detail3, user: usuario3)
+Review.create(content: "Me parreció super la clase!", detail: detail2, user: usuario3)
+Review.create(content: "Creo que puedo hacerlo yo también", detail: detail2, user: usuario4)
+Review.create(content: "Voy a aplicarlo en mi emprendimiento:)", detail: detail3, user: usuario1)
+Review.create(content: "Igual yo :)", detail: detail3, user: usuario3)
 
-Review.create(content: "El curso está bueno:)", detail: detail4, user: usuario2)
-Review.create(content: "Pude entenderlo, gracias:)", detail: detail4, user: usuario4)
-Review.create(content: "El curso está bueno:)", detail: detail5, user: usuario3)
-Review.create(content: "Pude entenderlo, gracias:)", detail: detail5, user: usuario4)
+Review.create(content: "El marketing también era importante", detail: detail4, user: usuario2)
+Review.create(content: "Así parece", detail: detail4, user: usuario4)
+Review.create(content: "Gracias por la gran información", detail: detail5, user: usuario3)
+Review.create(content: "Todo ok", detail: detail5, user: usuario4)
 
-Review.create(content: "El curso está bueno:)", detail: detail6, user: usuario2)
-Review.create(content: "Pude entenderlo, gracias:)", detail: detail6, user: usuario3)
-Review.create(content: "El curso está bueno:)", detail: detail7, user: usuario4)
-Review.create(content: "Pude entenderlo, gracias:)", detail: detail7, user: usuario1)
+Review.create(content: "Logré hacer mi prototipo!", detail: detail6, user: usuario2)
+Review.create(content: "Yo también :)", detail: detail6, user: usuario3)
+Review.create(content: "El curso me ayudó en mi desarrollo personal", detail: detail7, user: usuario4)
+Review.create(content: "A mí me ayudó a saber más de la era digital en la que estamos", detail: detail7, user: usuario1)
 
-Review.create(content: "El curso está bueno:)", detail: detail8, user: usuario1)
-Review.create(content: "Pude entenderlo, gracias:)", detail: detail8, user: usuario2)
-Review.create(content: "El curso está bueno:)", detail: detail9, user: usuario3)
-Review.create(content: "Pude entenderlo, gracias:)", detail: detail9, user: usuario4)
+Review.create(content: "Gracias por darnos a conocer las diferentes herramientas que hay", detail: detail8, user: usuario1)
+Review.create(content: "Sí, hay muchas !!!!", detail: detail8, user: usuario2)
+Review.create(content: "OH, Sí que era importante analizar nuestro entorno", detail: detail9, user: usuario3)
+Review.create(content: "Sí, más aún cuando recién inicias un negocio", detail: detail9, user: usuario4)
 
-Review.create(content: "El curso está bueno:)", detail: detail10, user: usuario1)
-Review.create(content: "Pude entenderlo, gracias:)", detail: detail10, user: usuario3)
-Review.create(content: "El curso está bueno:)", detail: detail11, user: usuario2)
-Review.create(content: "Pude entenderlo, gracias:)", detail: detail11, user: usuario4)
+Review.create(content: "Me da gusto que cada día aumenten las mujeres sobresalientes", detail: detail10, user: usuario1)
+Review.create(content: "Sí, nos da más impulso", detail: detail10, user: usuario3)
+Review.create(content: "Tiene razón al decir que los líderes toman decisiones difíciles y se hacen cargo", detail: detail11, user: usuario2)
+Review.create(content: "Sí, y hay que ser muy competente para serlo!", detail: detail11, user: usuario4)
 
-Review.create(content: "El curso está bueno:)", detail: detail12, user: usuario1)
-Review.create(content: "Pude entenderlo, gracias:)", detail: detail12, user: usuario2)
+Review.create(content: "Sí, hay que ser fuerte, en los tiempos difíles", detail: detail12, user: usuario1)
+Review.create(content: "La actitud es muy importante", detail: detail12, user: usuario2)

@@ -106,18 +106,18 @@
 // }
 .chat-container {
     flex-grow: 1;
-    padding: 30px;
+    padding: 15px;
     display: flex;
     flex-direction: column;
-    background-color: #FFCAD4;
+    background-color: rgb(183, 184, 187);
     position: absolute;
     bottom: 5px;
     left: 51px;
 }
 .chat-conversations {
     flex-grow: 1;
-    padding: 16px 0px;
-    height: 336px;
+    padding: 5px 0px;
+    height: 365px;
 
 }
 .message {
@@ -154,7 +154,13 @@ img {
 
 .container-modulo {
   background-color: #F4F4F4;
-  padding: 80px;
+  padding: 60px;
   margin-left: 0px;
   margin-right: 0px;
+}
+.col-4 {
+  margin-right: 0px;
+  margin-left: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
 }
