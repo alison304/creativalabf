@@ -2,29 +2,41 @@
 
   <div class="login-signup">
 
-    <h4>¿Aún no tienes una cuenta?
+    <h4 style="color: black;">¿Aún no tienes una cuenta?
     <br>
     <strong>Regístrate</strong></h4>
     <%= simple_form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
       <%= f.error_notification %>
 
       <div class="form-inputs">
+            <%= f.input :name,
+                        label: "Nombre",
+                        required: false,
+                        autofocus: true,
+                        input_html: { autocomplete: "name" } %>
         <%= f.input :email,
+                    label: "Correo",
                     required: true,
                     autofocus: true,
                     input_html: { autocomplete: "email" }%>
         <%= f.input :password,
+                    label: "Contraseña",
                     required: true,
                     hint: ("#{@minimum_password_length} characters minimum" if @minimum_password_length),
                     input_html: { autocomplete: "new-password" } %>
         <%= f.input :password_confirmation,
+                    label: "Confirmar contraseña",
                     required: true,
                     input_html: { autocomplete: "new-password" } %>
                     <br>
-        <%= f.button :submit, "Registrarse" %>
+        <%= f.button :submit, "Registrarse", class:"btn btn-primary" %>
+
       </div>
     <% end %>
 
     <%= render "devise/shared/links" %>
   </div>
+  <br>
+  <br>
+  <br>
 </div>

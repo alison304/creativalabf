@@ -7,21 +7,23 @@
 
       <%= simple_form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
         <div class="form-inputs">
-          <%= f.input :email,
-                      label: "Correo Electrónico",
-                      required: false,
-                      autofocus: true,
-                      input_html: { autocomplete: "email" } %>
+            <i class="fas fa-envelope icon"></i>
+            <%= f.input :email,
+                        label: "Correo",
+                        required: false,
+                        autofocus: true,
+                        input_html: { autocomplete: "email" } %>
 
-          <%= f.input :password,
-                      label: "Contraseña",
-                      required: false,
-                      input_html: { autocomplete: "current-password" } %>
-          <%= f.input :remember_me, label: "Recordar", as: :boolean if devise_mapping.rememberable? %>
+            <i class="fas fa-lock icon"></i>
+            <%= f.input :password,
+                        label: "Contraseña",
+                        required: false,
+                        input_html: { autocomplete: "current-password" } %>
+            <%= f.input :remember_me, label: "Recordar", as: :boolean if devise_mapping.rememberable? %>
 
-          <%= f.submit "Ingresar", class:"btn btn-primary" %>
-          <br>
-          <br>
+            <%= f.submit "Ingresar", class:"btn btn-primary" %>
+            <br>
+            <br>
 
 
           <a href="/users/sign_up" class="enlace-login">Regístrate</a>
@@ -36,5 +38,8 @@
     <%# <%= render "devise/shared/links" %>
     </div>
   </div>
+<br>
+<br>
+<br>
 
 </div>
