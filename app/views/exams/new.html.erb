@@ -46,19 +46,10 @@
               'a', 'b', 'c']%> 
           <%# end %>
         </div>
-        <div class="container">
-          <div class="row">
-            <div class="col-6">
-            <%= link_to 'Regresar', course_detail_path(@detail.course, @detail), class: "btn btn-outline-dark" %>
-          </div>
-          <div class="col-6">
-            <%= f.submit "Enviar", class: "btn btn-outline-dark" %>
-          </div>
-          </div>
-        </div>
         <% end %>
       <% end %>
       <%# <button type="submit" class="btn btn-outline-primary p-2 m-3 ">Enviar</button> %>
     </div>
+    <%= link_to 'Volver', course_detail_path(@detail.course, @detail), class: "btn btn-outline-dark" %> Hola <%= f.submit "Enviar", class: "btn btn-outline-dark" %>
   </div>
 </div>

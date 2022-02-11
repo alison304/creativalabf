@@ -38,9 +38,8 @@
           <%= f.input :r4, label: 'Answer No4', collection: [
             'a', 'b', 'c']%>
         </div>
-        <%= f.submit "Enviar", class: "btn btn-outline-primary pb-2 m-3" %>
+        <%= f.submit "Enviar", class: "btn btn-outline-dark pb-2 m-3" %> <%= link_to 'Volver', course_detail_path(@detail.course, @detail), class: "btn btn-outline-dark p-2 m-3" %>
       <% end %>
-      <%= link_to 'Regresar', course_detail_path(@detail.course, @detail), class: "btn btn-outline-primary p-2 m-3" %>
     </div>
   </div>
 </div>
