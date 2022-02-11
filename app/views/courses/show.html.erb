@@ -1,11 +1,11 @@
 
 <div class='container mt-5 pt-5'>
-<div class="courses-show">
+<div class="courses-showw">
   <div class="row">
-      <div class="col-8">
+      <div class="">
         <h1 style="font-size: 3.1rem;"><%= @course.name %></h1>
         <br>
-        <p class="card-h" style="margin-bottom: 2.5rem">Descripción: <%= @course.description %></p>
+        <p class="" style="margin-bottom: 2.5rem">Descripción: <%= @course.description %></p>
         <p></p>
       </div>
 
@@ -15,9 +15,9 @@
     </div>
 
       <div class="container">
-        <%= link_to 'Ver módulos', course_details_path(@course), class: "btn btn-outline-dark" %>
+        <%= link_to 'Ver módulos', course_details_path(@course), class: "btn btn-outline-dark btn-detalles1" %>
         <!-- <%= link_to 'Nuevo curso', new_course_path(@course), class: "btn btn-primary" %> -->
-        <%= link_to 'Volver', courses_path, class: "btn btn-outline-dark btn-detalle" %>
+        <%= link_to 'Volver', courses_path, class: "btn btn-outline-dark btn-detalles2" %>
       </div>
 </div>
 

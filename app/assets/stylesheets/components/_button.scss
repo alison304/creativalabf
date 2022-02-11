@@ -3,3 +3,19 @@ font-size: 1.25rem;
 padding-left: 5px;
 padding-right: 5px;
 }
+
+.btn-outline-dark {
+    background-color: #f8f9fa;
+    border-color: #1100CB;
+    border-radius: 8px;
+    font-weight: bold;
+    border-width: medium;
+    color: #1100CB;
+    font-family: 'Outfit', sans-serif;
+}
+
+.btn-outline-dark:hover {
+    color: #fff;
+    background-color: #1100cb;
+    border-color: #f8f9fa;
+}
