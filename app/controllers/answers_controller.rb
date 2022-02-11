@@ -6,31 +6,27 @@ class AnswersController < ApplicationController
   end
 
   def show
+    @exam = @answer.exam
+    @detail = @exam.detail
   end
 
   def new
-    @answer = Answer.new
-    @exam = Exam.find(params[:exam_id])
-    @exams = @exam.detail.exams
+    @answer = Answer.new()
     @detail = @exam.detail
   end
 
   def create
-    @answer = Answer.new(answer_params)
-    # @answer.approved = @approved
-    @exam = Exam.find(params[:exam_id])
-    if @answer.answer == @exam.answer_solution
-      @answer.approved = true
-    else
-      @answer.approved = false
-    end
-    @answer.user = current_user
-    @answer.exam = @exam
-    if @answer.save
-      redirect_to new_exam_answer_path(@exam)
-    else
-      render :new
-    end
+    answer = Answer.new(answer_params)
+    answer.exam = @exam
+    answer.user = current_user
+    answer.score = 0
+    answer.score += 1 if @exam.answer_solution == answer.r1
+    answer.score += 1 if @exam.r2 == answer.r2
+    answer.score += 1 if @exam.r3 == answer.r3
+    answer.score += 1 if @exam.r4 == answer.r4
+    answer.approved = answer.score >= 3
+    answer.save
+    redirect_to answer_path(answer)
   end
 
   def edit
@@ -52,7 +48,7 @@ class AnswersController < ApplicationController
   private
 
   def answer_params
-    params.require(:answer).permit(:approved, :answer, :exam_id, :user_id)
+    params.require(:answer).permit( :r1, :r2, :r3, :r4 )
   end
 
   def set_answer

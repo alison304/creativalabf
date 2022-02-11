@@ -1,29 +1,46 @@
-<%= simple_form_for [exam, @answer] do |f| %>
-  <div class="form-inputs p-0">
-    <%= f.input :answer, label:"Selecciona tu respuesta", as: :radio_buttons, collection: [
-      exam.question,
-      exam.answer_solution,
-      exam.detail_id,
-      exam.answerA,
-      exam.answerB,
-      exam.answerC,
-      exam.p2,
-      exam.r21,
-      exam.r22,
-      exam.r23,
-      exam.r2,
-      exam.p3,
-      exam.r31,
-      exam.r32,
-      exam.r33,
-      exam.r3,
-      exam.p4,
-      exam.r41,
-      exam.r42,
-      exam.r43,
-      exam.r4]%>
+<br>
+<div class="container">
+  <h2 style="text-align:center;"><strong><%= @detail.name %></strong></h2>
+  <br>
+  <br>
+  <div class="row">
+    <div class="col-8 mx-auto">
+      <%= simple_form_for @answer, method: :post, url: exam_answers_path(@exam) do |f| %>
+        <div class="card-exam pb-3 ">
+          <p class="pb-1"><strong><%= @exam.question %></strong><br></p>
+          a.- <%= @exam.answerA %><br>
+          b.- <%= @exam.answerB %><br>
+          c.- <%= @exam.answerC %><br>
+          <%= f.input :r1, label: 'Answer No1' , collection: [
+            'a', 'b', 'c']%>
+        </div>
+        <div class="card-exam pb-3">
+          <p class="pb-1"><strong><%= @exam.p2 %></strong><br></p>
+          a.- <%= @exam.r21 %><br>
+          b.- <%= @exam.r22 %><br>
+          c.- <%= @exam.r23 %><br>
+          <%= f.input :r2, label: 'Answer No2' , collection: [
+            'a', 'b', 'c']%>
+        </div>
+        <div class="card-exam pb-3">
+          <p class="pb-1"><strong><%= @exam.p3 %></strong><br></p>
+          a.- <%= @exam.r31 %><br>
+          b.- <%= @exam.r32 %><br>
+          c.- <%= @exam.r33 %><br>
+          <%= f.input :r3, label: 'Answer No3', collection: [
+            'a', 'b', 'c']%>
+        </div>
+        <div class="card-exam pb-3">
+          <p class="pb-1"><strong><%= @exam.p4 %></strong><br></p>
+          a.- <%= @exam.r41 %><br>
+          b.- <%= @exam.r42 %><br>
+          c.- <%= @exam.r43 %><br>
+          <%= f.input :r4, label: 'Answer No4', collection: [
+            'a', 'b', 'c']%>
+        </div>
+        <%= f.submit "Enviar", class: "btn btn-outline-primary pb-2 m-3" %>
+      <% end %>
+      <%= link_to 'Regresar', course_detail_path(@detail.course, @detail), class: "btn btn-outline-primary p-2 m-3" %>
+    </div>
   </div>
-  <div class="form-actions">
-    <%= f.button :submit, "Responder", :as => :hidden, class: 'btn btn-primary btn-sm flex-item mb-5'%>
-  </div>
-<% end %>
+</div>

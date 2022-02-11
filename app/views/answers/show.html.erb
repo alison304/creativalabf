@@ -1,0 +1,46 @@
+<br>
+<div class="container" style="position:relative">
+  <h2 style="text-align:center;"><strong><%= @detail.name %></strong></h2>
+  <div class="bg-warning rounded d-flex align-items-center justify-content-center fw-bold" style="position:absolute;height:3.5%;width:6%;font-size:2vw;top:.5%;left:76%"><%= (@answer.score / 4 * 100).to_i %>%</div>
+  <br>
+  <br>
+  <div class="row">
+    <div class="col-8 mx-auto">
+      <%= simple_form_for @answer, method: :post, url: exam_answers_path(@exam) do |f| %>
+        <div class="card-exam pb-3 ">
+          <p class="pb-1"><strong><%= @exam.question %></strong><br></p>
+          a.- <%= @exam.answerA %><br>
+          b.- <%= @exam.answerB %><br>
+          c.- <%= @exam.answerC %><br>
+          <%= f.input :r1, label: 'Answer No1' , collection: [
+            'a', 'b', 'c'], input_html: { disabled: true, class: (@exam.answer_solution == @answer.r1 ? "is-valid" : "is-invalid")  }%>
+        </div>
+        <div class="card-exam pb-3">
+          <p class="pb-1"><strong><%= @exam.p2 %></strong><br></p>
+          a.- <%= @exam.r21 %><br>
+          b.- <%= @exam.r22 %><br>
+          c.- <%= @exam.r23 %><br>
+          <%= f.input :r2, label: 'Answer No2' , collection: [
+            'a', 'b', 'c'] , input_html: { disabled: true, class: (@exam.r2 == @answer.r2 ? "is-valid" : "is-invalid") }%>
+        </div>
+        <div class="card-exam pb-3">
+          <p class="pb-1"><strong><%= @exam.p3 %></strong><br></p>
+          a.- <%= @exam.r31 %><br>
+          b.- <%= @exam.r32 %><br>
+          c.- <%= @exam.r33 %><br>
+          <%= f.input :r3, label: 'Answer No3', collection: [
+            'a', 'b', 'c'] , input_html: { disabled: true, class: (@exam.r3 == @answer.r3 ? "is-valid" : "is-invalid") }%>
+        </div>
+        <div class="card-exam pb-3">
+          <p class="pb-1"><strong><%= @exam.p4 %></strong><br></p>
+          a.- <%= @exam.r41 %><br>
+          b.- <%= @exam.r42 %><br>
+          c.- <%= @exam.r43 %><br>
+          <%= f.input :r4, label: 'Answer No4', collection: [
+            'a', 'b', 'c'] , input_html: { disabled: true, class: (@exam.r4 == @answer.r4 ? "is-valid" : "is-invalid") }%>
+        </div>
+      <% end %>
+      <%= link_to 'Regresar', course_detail_path(@detail.course, @detail), class: "btn btn-outline-primary p-2 m-3" %>
+    </div>
+  </div>
+</div>
