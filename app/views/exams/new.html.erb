@@ -1,12 +1,12 @@
 <br>
 <div class="container">
-  <h1 style="text-align:center;"><%= @detail.name %></h1>
+  <h2 style="text-align:center;"><strong><%= @detail.name %></strong></h2>
   <br>
   <br>
   <div class="row">
     <div class="col-8 mx-auto">
       <% @exams.each do |exam| %>
-        <div class="card-exam pb-5 ">
+        <div class="card-exam pb-3 ">
           <p class="pb-1"><strong><%= exam.question %></strong><br></p>
           a.- <%= exam.answerA %><br>
           b.- <%= exam.answerB %><br>
@@ -16,7 +16,7 @@
               'a', 'b', 'c']%>
           <%# end %>
         </div>
-        <div class="card-exam pb-5">
+        <div class="card-exam pb-3">
           <p class="pb-1"><strong><%= exam.p2 %></strong><br></p>
           a.- <%= exam.r21 %><br>
           b.- <%= exam.r22 %><br>
@@ -26,7 +26,7 @@
               'a', 'b', 'c']%>
           <%# end %>
         </div>
-        <div class="card-exam pb-5">
+        <div class="card-exam pb-3">
           <p class="pb-1"><strong><%= exam.p3 %></strong><br></p>
           a.- <%= exam.r31 %><br>
           b.- <%= exam.r32 %><br>
@@ -36,7 +36,7 @@
               'a', 'b', 'c']%>
           <%# end %>
         </div>
-        <div class="card-exam pb-5">
+        <div class="card-exam pb-3">
           <p class="pb-1"><strong><%= exam.p4 %></strong><br></p>
           a.- <%= exam.r41 %><br>
           b.- <%= exam.r42 %><br>
@@ -46,12 +46,12 @@
               'a', 'b', 'c']%>
           <%# end %>
         </div>
-        <%= f.submit "Enviar", class: "btn btn-outline-dark p-2 m-3" %>
+        <%= f.submit "Enviar", class: "btn btn-outline-primary pb-2 m-3" %>
         <% end %>
       <% end %>
       <%# <button type="submit" class="btn btn-outline-primary p-2 m-3 ">Enviar</button> %>
 
-      <%= link_to 'Regresar', course_detail_path(@detail.course, @detail), class: "btn btn-outline-dark p-2 m-3" %>
+      <%= link_to 'Regresar', course_detail_path(@detail.course, @detail), class: "btn btn-outline-primary p-2 m-3" %>
     </div>
   </div>
 </div>
