@@ -1,4 +1,8 @@
-<div class="container exam-admi">
+<br>
+<div class="container">
+  <h1 style="text-align:center;"><%= @detail.name %></h1>
+  <br>
+  <br>
   <div class="row">
     <div class="col-8 mx-auto">
       <% @exams.each do |exam| %>
@@ -42,11 +46,12 @@
               'a', 'b', 'c']%>
           <%# end %>
         </div>
-        <%= f.submit %>
+        <%= f.submit "Enviar", class: "btn btn-outline-dark p-2 m-3" %>
         <% end %>
       <% end %>
       <%# <button type="submit" class="btn btn-outline-primary p-2 m-3 ">Enviar</button> %>
-      <%= link_to 'Regresar', course_detail_path(@detail.course, @detail), class: "btn btn-outline-primary p-2 m-3" %>
+
+      <%= link_to 'Regresar', course_detail_path(@detail.course, @detail), class: "btn btn-outline-dark p-2 m-3" %>
     </div>
   </div>
 </div>

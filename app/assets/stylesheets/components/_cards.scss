@@ -13,10 +13,6 @@
   padding: 15px;
 }
 
-.card-h{
-  font-size: 20px;
-}
-
 .cards-2{
  padding: 20px;
  margin: 0;
@@ -56,6 +52,12 @@
 //     grid-gap: 30px;
 //   }
 // }
+
+.courses-showw {
+    margin-top: -200px;
+    height: calc(75vh - -370px);
+    padding: 140px;
+}
 
 .index-banner p{
   text-align: left;
@@ -138,8 +140,6 @@
   }
 }
 
-
-
 // Cards category de home:
 
 // Smallest device
@@ -177,11 +177,6 @@
   }
 }
 
-
-
-
-
-
 // cards home
 .title-podcast {
   background-color: white;
@@ -190,7 +185,6 @@
 *{
   box-sizing: border-box;
 }
-
 
 .cards {
     width: 100%;
@@ -225,12 +219,12 @@
 .card__clock {
     width: 15px;
   vertical-align: middle;
-    fill: #AD7D52;
+    fill: #554232;
 
 }
 .card__time {
     font-size: 12px;
-    color: #AD7D52;
+    color: #554232;
     vertical-align: middle;
     margin-left: 5px;
     font-family: 'Outfit', sans-serif;
@@ -342,4 +336,49 @@ font-family: 'Outfit', sans-serif;
 
 .card:hover .card__info-hover {
     opacity: 1;
+}
+
+.card__info1 {
+
+  position: relative;
+  z-index: 2;
+  border-radius: 8px;
+  padding: 16px 24px 24px 24px;
+  margin: 36px;
+  font-family: 'Outfit', sans-serif;
+}
+
+.card__info2 {
+  background-image: ('https://images.unsplash.com/photo-1580894732444-8ecded7900cd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80');
+  position: relative;
+  z-index: 2;
+  border-radius: 8px;
+  padding: 16px 24px 24px 24px;
+  margin: 36px;
+  font-family: 'Outfit', sans-serif;
+}
+
+.card__info3 {
+  background-image: ('https://images.unsplash.com/photo-1580894732444-8ecded7900cd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80');
+
+  position: relative;
+  z-index: 2;
+
+    border-radius: 8px;
+    padding: 16px 24px 24px 24px;
+    margin: 36px;
+    font-family: 'Outfit', sans-serif;
+}
+
+.card__imginfo--hover {
+  background-image: url('https://images.unsplash.com/photo-1552664862-db5607e91378?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80');
+}
+
+
+.cardinfo--1 {
+    height: 195px;
+    width: 410px;
+    text-align: right;
+    left: 185px;
+
 }
